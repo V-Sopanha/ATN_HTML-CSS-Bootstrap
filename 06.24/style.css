@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* .header{
+    width: 100%;
+    height: 200px;
+    background-color: aqua;
+} */
+/* attribute selector */
+[class="header"]{
+    width: 100%;
+    height: 200px;
+    background-color: aqua;
+    margin-bottom: 50px;
+}
+
+.box{
+    width: 500px;
+    height: 400px;
+    /* background-color: aquamarine; */
+    /* top left-right buttom */
+    padding: 10px 20px 10px;
+    margin: auto;
+    margin-right: 20px;
+
+    /* top button */
+    margin: 0px 10px;
+
+
+    border: 5px solid rgb(0, 0, 0);
+
+    
+    border-radius: 10px;
+    border-top-style: dotted;
+    border-bottom-style: double;
+    border-top-color: rgb(255, 0, 212);
+    border-bottom-color: darkorchid;
+
+
+}
+
+/* .box {
+  border-width: 40px;
+  border-style: solid;
+  border-image-source: url('https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Decorative-Elements-PNG/Decorative_Border_Transparent_PNG_Image.png');
+  border-image-slice: 100;
+  border-image-repeat: round;
+} */
