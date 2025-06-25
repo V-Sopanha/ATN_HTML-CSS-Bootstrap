@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <style>
+        .vdo{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+
+        }
+        .plyr__control--overlaid {
+            color: rgb(0, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h2>Video</h2>
+    <hr>
+    <div class="vdo">
+
+    <video src="sound/OPPENHEIMER   Can You Hear The Music [4K].mp4" controls  width="1000px" height="" autoplay muted loop poster="sound/OPPENHEIMER   Can You Hear The Music [4K].mp4" id="player1"></video>
+
+    <!--  -->
+    </div>
+    <!-- <video  controls width="1000px">
+        <source src="sound/OPPENHEIMER   Can You Hear The Music [4K].mp4" type="video/mp4" >
+        <source src="sound/OPPENHEIMER   Can You Hear The Music [4K].ogg" type="video/ogg">
+    </video> -->
+
+    <br><br>
+
+    <audio src="sound/3ece49f5d7cf8ad0a7e3161fb6a0c123.mp3" controls muted preload="none" ></audio>
+
+    <audio id="audio" controls >
+        <source src="sound/3ece49f5d7cf8ad0a7e3161fb6a0c123.mp3" type="audio/mp3">
+        <source src="sound/3ece49f5d7cf8ad0a7e3161fb6a0c123.aff" type="audio/aff">
+    </audio>
+
+    <br><br>
+
+    <iframe src="" frameborder="0"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IWKyykQBRKo?si=3ruYOQzvm4KvxOjK" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    <br><br>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script>
+        const player1 = new Plyr('#player1');
+    </script>
+
+</body>
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+</html>

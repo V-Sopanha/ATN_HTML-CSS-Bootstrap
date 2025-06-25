@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        input{
+            width: 100px;
+            height: 20px;
+        }
+        label{
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .mb-3{
+            margin-bottom: 1rem;
+        }
+        /*  */
+        .form-control{
+            width: 200px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body leftmargin="100px" topmargin="20px">
+    <h2>Form Layout</h2>
+    <br><br>
+
+    <form action="" method="" target="">
+      <div class="mb-3">
+        <label for="">Gender : </label>
+        <input type="radio" class="form-control" name="gender" id="M" value="M"> 
+        <label for="M">Male</label>
+        <input type="radio" class="form-control" name="gender" id="F">
+        <label for="F">Female</label>
+      </div>
+
+
+      <div class="mb-3">
+        <label for="">Language : </label>
+        <input type="checkbox"  name="lang" id="kh" value="KHMER" checked>
+        <label for="kh">Khmer</label>
+        <input type="checkbox"  name="lang" id="eng" value="ENGLISH">
+        <label for="eng">English</label>
+      </div>
+      
+
+      <div class="mb-3">
+        <label for="pro">Provinces : </label>
+        <select name="txtpro" id="pro" class="form-control">
+            <option value="" selected disabled>--Please Select--</option>
+            <option value="">Phnom Penh</option>
+            <option value="">Kampong Thom</option>
+            <option value="">Seam Reap</option>
+            <option value="">Battambong</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="">Input Type</label>
+        <input type="date">
+        <input type="time">
+        <br><br>
+        <input type="color">
+        <br><br>
+        <input type="file">
+        <br><br>
+        <input type="search">
+      </div>
+
+
+
+    </form>
+
+</body>
+</html>
