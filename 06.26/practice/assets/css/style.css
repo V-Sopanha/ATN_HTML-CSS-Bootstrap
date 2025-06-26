@@ -19,8 +19,15 @@
     margin-bottom: 20px;
 
 }
+
+.form-control {
+    width: 200px;
+    height: 30px ;
+    margin: 10px 20px;
+}
 .row{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -36,11 +43,16 @@
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 5px;
+    /*  */
+    display: flex;
+    align-items: flex-end;
 }
 
 .content p{
-    padding-left: 10px ;
-    padding-top: 70px;
+    /* padding-left: 10px ;
+    padding-top: 70px; */
+    /*  */
+    padding: 10px 10px;
 }
 
 .col-4{
