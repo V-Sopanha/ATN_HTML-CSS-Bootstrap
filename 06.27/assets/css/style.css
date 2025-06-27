@@ -1,0 +1,66 @@
+/* 
+ul li{
+    padding: 20px;
+}
+
+ul li a {
+    color: brown;
+}
+  */
+/* for its child */
+/* .text>li{
+    color: red;
+} */
+
+.text li{
+    color: red;
+}
+
+/*  der tii 3*/
+/* .main-item+span {
+    color: blue;
+    font-size: 20px;
+} */
+
+/* tii3 and tii 4 */
+.main-item~span {
+    color: blue;
+    font-size: 20px;
+}
+
+.form-floating {
+    position : relative;
+}
+
+.form-control{
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 12px;
+    /* position: absolute; */
+}
+
+input:focus~label{
+    color:blue;
+    font-size: 12px;
+    top : -10px
+}
+
+label{
+    position: absolute;
+    top : 12px;
+    left: 12px;
+    background-color: white;
+    padding-inline: 12px;
+    transform: 0.1s;
+}
+
+
+input[disabled="disabled"] {
+    background-color: gray;
+}
+
+input[type="email"]{
+    border: 3px solid green;
+}
