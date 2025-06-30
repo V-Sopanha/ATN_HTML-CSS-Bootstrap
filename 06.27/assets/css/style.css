@@ -8,13 +8,13 @@ ul li a {
 }
   */
 /* for its child */
-/* .text>li{
-    color: red;
-} */
-
-.text li{
+.text>li{
     color: red;
 }
+/* 
+.text li{
+    color: red;
+} */
 
 /*  der tii 3*/
 /* .main-item+span {
@@ -53,7 +53,7 @@ label{
     left: 12px;
     background-color: white;
     padding-inline: 12px;
-    transform: 0.1s;
+    transition: 0.2s;
 }
 
 
