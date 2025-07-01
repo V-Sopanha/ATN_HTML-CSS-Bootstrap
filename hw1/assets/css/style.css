@@ -126,7 +126,7 @@
 .achievement {
     width: 100%;
     height: 200px;
-    background-image: url('/hw1/assets/images/total-bg.jpg');
+    background-image: url(../images/total-bg.jpg);
     background-size: cover;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
