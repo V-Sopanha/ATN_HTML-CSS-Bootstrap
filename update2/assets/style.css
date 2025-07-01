@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-title {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -15px;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+[class*="col-"] {
+    padding-inline: 15px;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-9 {
+    width: calc(9 * 100% / 12);
+}
+
+.col-8 {
+    width: calc(8 * 100% / 12);
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
+    width: calc(100% / 3);
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.our-service-area .card {
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.our-service-area .icon {
+    width: 60px;
+    height: 60px;
+    background-color: lightblue;
+    border-radius: 15px 15px 15px 5px;
+}
+
+.our-service-area .card .card-body h3 {
+    font-size: 19px;
+    margin-block: 12px;
+}
+.our-service-area .card .card-body p {
+    margin-bottom: 15px;
+}
+
+.web-solution-area{
+    margin-top: -70px;
+}
+
+.web-solution-area .section-title {
+    text-align: left;
+}
+
+.web-solution-area .section-title h2 {
+    margin-bottom: 15px;
+}
+
+.web-solution-area .section-title p {
+    margin-bottom: -15px;
+}
+
+.web-solution-area .web-solution-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.web-solution-area .web-solution-list li {
+    width: calc(50% - 10px);
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-bottom-right-radius: 10px;
+    border-left: 2px solid blue;
+}
+
+.web-solution-area .web-solution-list li.active {
+    background-color: #6130e1;
+    color: #ffff;
+}
+
+.total-counter-area {
+    background-color: rgba(137, 43, 226, 0.603);
+    background-image: url(./images/total-bg.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-blend-mode: multiply;
+}
+
+.total-counter-area .total-box {
+    text-align: center;
+}
+
+.total-counter-area .total-box p {
+    font-size: 38px;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.total-counter-area .total-box span {
+    font-weight: 500;
+    color: #ffff;
+}
+
+.portfolio .section-title small {
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    color: blue;
+}
+
+.portfolio .section-title h3 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.portfolio .portfolio-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+}
+
+.portfolio .portfolio-list li button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+.portfolio .portfolio-list li button.active {
+    background-color: blue;
+    color: #ffff;
+}
+
+.portfolio-images {
+    padding: 40px 40px 0;
+}

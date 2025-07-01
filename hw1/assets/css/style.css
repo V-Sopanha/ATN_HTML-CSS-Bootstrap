@@ -49,7 +49,10 @@
 .card .icon{
     width: 50px;
     height: 50px;
-    background-color: black;
+    background-color: grey;
+    border: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .card .card-title{
     padding: 20px 0px;
@@ -126,15 +129,9 @@
     background-image: url('/hw1/assets/images/total-bg.jpg');
     background-size: cover;
     background-position: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
       
 }
-.row {
-    display: flex;
-    justify-content:center; 
-    align-items: center;  
-}
-
 .col-3 {
     width: 22%;
     /* background-color: aqua; */
@@ -143,7 +140,90 @@
     justify-content: center;
     align-items: center;
 }
-.achievement-item h2{
-    padding-left: 35px;
+.achievement .achievement-item {
+    text-align: center;
 }
+.achievement .achievement-item p {
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+}
+.achievement .achievement-item span {
+    font-weight: bold;
+    color: white;
+}
+
+/* portfolio */
+.container{
+    width: 100%;
+    height: auto;
+    background-color: #EFF8FF;
+}
+.portfolio{
+    width: 90%;
+    height: 800px;
+    /* background-color:black ; */
+    margin: 20px auto;
+}
+.portfolio .portfolio-title {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    /* background-color: bisque; */
+    margin: auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.portfolio .portfolio-title p {
+    font-size: 10px;
+    font-weight: bold;
+    color: blue;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+.portfolio .portfolio-title h3 {
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.portfolio .portfolio-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+    /* background-color: antiquewhite; */
+    margin-top: 50px;
+}
+.portfolio .portfolio-list li button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 2px;
+    color: rgb(75, 75, 75);
+    background-color: rgb(228, 228, 228);
+}
+.portfolio .portfolio-list button.active {
+    background-color: blue;
+    color: white;
+}
+.portfolio-images {
+    width: 100%;
+    /* background-color: black; */
+    margin-top: 30px;
+    padding: 20px 0;
+}
+.portfolio-images .row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.col-4 {
+    width: 30%;
+}
+.portfolio-images img {
+    width: 100%;
+    height: auto;
+}
+
 
