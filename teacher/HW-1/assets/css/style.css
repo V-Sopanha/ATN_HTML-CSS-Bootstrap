@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    line-height: 1.5;
+}
+
+section {
+    padding: 60px 0;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 1250px;
+    margin: auto;
+}
+
+/* Grid System Classes */
+.row {
+    display: flex;
+    margin-inline: -15px;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.col-4 {
+    width: 33.33333333333333%;
+    padding-inline: 15px;
+}
+
+.col-3 {
+    width: 25%;
+    padding-inline: 15px;
+}
+
+.col-6 {
+    width: 50%;
+    padding-inline: 15px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.our-service-area .card {
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.our-service-area .card .card-body h3 {
+    margin-block: 20px;
+}
+
+.our-service-area .card .card-body p {
+    margin-bottom: 20px;
+}
+
+.our-service-area .card .icon {
+    width: 60px;
+    height: 60px;
+    background-color: lightblue;
+    border-radius: 15px 15px 15px 5px;
+}
+
+/* web-solution */
+
+.web-solution .section-title {
+    text-align: left;
+}
+
+.web-solution .section-title h2 {
+    margin-bottom: 15px;
+}
+
+.web-solution .web-solution-list ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.web-solution .web-solution-list ul li {
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: calc(50% - 15px);
+    border-bottom-right-radius: 12px;
+    border-left: 3px solid blue;
+}
+
+.web-solution .web-solution-list ul li.active {
+    background-color: blue;
+    color: #fff;
+}
+
+
+.counter-area {
+    background-image: url(../images/total-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 0;
+}
+
+.counter-area .counter-box {
+    text-align: center;
+}
+
+.counter-area .counter-box h2 {
+    font-size: 42px;
+    color: #fff;
+}
+
+.counter-area .counter-box span {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.counter-area .bg-overlay {
+    background-color: rgba(0, 0, 255, 0.4);
+    padding: 70px 0;
+}
