@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* color name */
+    /* background-color: grey; */
+
+    /* color HEX */
+    /* background-color: #000000; */
+
+    /* COlor RGB */
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgb(255, 255, 255);
+
+    /* color RGBA */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+
+
+
+}
+
+.wrapper{
+    width: 1000px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 40px auto;
+
+    /* background-color: #837b7b;
+    background-image: url(../image/driver5.avif);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-clip: padding-box; */
+
+    background: #837b7b url(../image/driver5.avif) right bottom / 100px no-repeat padding-box;
+}
+
+.container{
+    width: 1200px;
+    height: 400px;
+    background-color: #ffffff;
+    margin: 100px auto;
+    border: 1px solid black;
+    background-image: url(../image/driver5.avif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    /* background-position: left center; */
+    /* background-position: right center; */
+    /* background-position: calc(100% - 20px) calc(100% - 20px); */
+
+    background-position: center;
+    /* background-attachment: scroll; */
+    /* background-attachment: fixed; */
+
+    background-attachment: local;
+    overflow: auto;
+}
+
+.height-hidden{
+    /* background-color: black; */
+    width: 100%;
+    height: 1200px;
+}
+
+.box-clip{
+    width: 400px;
+    height: auto;
+    border: 1px dashed black;
+    padding: 50px;
+    margin: 50px auto;
+    font-size: 20px;
+    background-color: #837b7b;
+
+    /* background-clip: border-box; */
+    /* background-clip: padding-box; */
+    background-clip: content-box;
+}
+
+.box-origin{
+    width: 400px;
+    height: auto;
+    border: 1px dashed black;
+    padding: 50px;
+    margin: 50px auto;
+    font-size: 20px;
+    background-color: #837b7b;
+    background-image: url(../image/driver5.avif);
+    background-size: 100px;
+
+    background-origin: content-box;
+    background-origin: border-box;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    background-image: url(../image/driver5.avif);
+    background-size: contain;
+    background-position: right center;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.block{
+    width: 400px;
+    height: 400px;
+    background-image: url(https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyNC9kcml2ZXJzL2hlYWRzaG90cy9mMS9sZWMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=);
+    background-size: cover;
+    background-position: center;
+    margin: 200px auto 0px;
+}
+.block .content{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
