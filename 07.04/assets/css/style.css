@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.shadow{
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    border: 1px solid black;
+    box-shadow: 5px 10px 20px 0 rgba(0, 0, 0,0.5);
+}
+
+.box-opacity{
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: gray;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.box-opacity:hover{
+    opacity: 1;
+}
+
+.content{
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: aqua;
+
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+    /* resize: vertical;
+    resize: horizontal; */
+    resize: both;
+}

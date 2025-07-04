@@ -47,6 +47,7 @@
     list-style-image: url(../image/check.png); */
 
     list-style: inside url(../image/check.png);
+
 }
 .list-group .item{
     font-size: 20px;
