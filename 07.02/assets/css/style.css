@@ -121,3 +121,38 @@ h1{
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.bg-gradient-1{
+    width: 1200px;
+    height: 500px;
+    margin: 100px auto;
+    background : linear-gradient(to right, #c026d3,#3b82f6, #171717);
+}
+.bg-gradient-2{
+    width: 1200px;
+    height: 500px;
+    margin: 100px auto;
+    /* background: repeating-linear-gradient(to right,yellow 0, yellow 50px, black 0, black 100px); */
+        background: repeating-linear-gradient(45deg,yellow 0, yellow 50px, black 0, black 100px);
+}
+
+
+.block-1{
+    width: 400px;
+    height: 400px;
+    background-image: url(https://image-service.zaonce.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiJmMW1hbmFnZXIvMjAyNC9kcml2ZXJzL2hlYWRzaG90cy9mMS9sZWMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo1MDB9fX0=);
+    background-size: cover;
+    background-position: center;
+    margin: 200px auto 0px;
+}
+.block-1 .content-1{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.5));
+
+}

@@ -12,8 +12,8 @@ body {
     background-attachment: fixed;
 }
 .navbar {
-    width: 100%;
-    height: 50px;
+    /* width: 100%;
+    height: 50px; */
     background-color: rgba(200, 200, 200, 0.5);
 }
 .container-fluid {
@@ -26,28 +26,29 @@ body {
     justify-content: space-between;
     list-style-type: none;
 }
-.navbar .nav-items .nav-links {
+.navbar .nav-items .nav-link {
     display: block;
     padding: 15px 30px;
     text-decoration: none;
     color: rgb(0, 100, 0);
 }
-.nav-items .nav-links {
+.nav-items .nav-link {
     background-image: url(../images/hover_active.jpg);
     background-repeat: no-repeat;
     background-position: 50% 130%;
     background-size: 10px;
     transition: 0.5s;
 }
-.nav-items .nav-links:hover {
+.nav-items .nav-link:hover {
     background-position: bottom;
     color: rgb(0, 200, 0);
 }
-.nav-items .nav-links.active {
+.nav-items .nav-link.active {
     background-image: none;
     background-color: rgb(59, 59, 59);
     border-radius: 3px;
     color: white;
-    border: 1px solid rgb(0, 100, 0);
+    border: 3px double rgb(0, 100, 0);
+    background-clip: padding-box;
 }
 
