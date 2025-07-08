@@ -14,7 +14,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: rgba(82, 82, 82, 0);
+    background-color: rgba(82, 82, 82, 0.1);
 }
 
 
@@ -76,7 +76,7 @@ img {
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-    background: linear-gradient( #f7f7f7 0%, #000000 100%);
+    background: linear-gradient(#f7f7f7 0%, #000000 100%);
     color: transparent;
     background-clip: text;
 }
@@ -167,7 +167,6 @@ p {
     margin: 10px;
 }
 
-
 .portfolio-area {
     background-color: rgb(247, 247, 247);
 }
@@ -177,11 +176,11 @@ p {
     background-color: #ffffff;
 }
 
-.portfolio-area .portfolio-card .portfolio-card-thumnial {
+.portfolio-area .portfolio-card .portfolio-card-image {
     transition: 0.3s;
 }
 
-.portfolio-area .portfolio-card .portfolio-card-thumnial:hover {
+.portfolio-area .portfolio-card .portfolio-card-image:hover {
     transform: scale(1.1);
 }
 
