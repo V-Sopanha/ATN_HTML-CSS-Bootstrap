@@ -51,7 +51,7 @@
 }
 /* hover  */
 .col-4:hover .card{
-    background: linear-gradient(45deg, #60a5fa,#c084fc);
+    background: linear-gradient(45deg, #60a5fa,#A877FF);
     margin-top: -10px;
 }
 /*  */
@@ -94,7 +94,7 @@
     width: 50%;
     position: relative;
     overflow: hidden;
-    transition: 1s;
+    /* transition: 1s; */
 }
 
 .content {
@@ -126,18 +126,18 @@
     border-left: 1px solid blue;
     border-bottom-right-radius: 10px;
     /* background: linear-gradient(to right , #60a5fa ,#7e22ce); */
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 .box .col-6:hover .color-box{
-    background: linear-gradient(to right , rgba(102, 179, 255, 0.5) ,#7e22ce);
+    background: linear-gradient(to right , rgba(102, 179, 255, 0.5) ,#A877FF);
     left: 0;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 /*  */
 .box .active{
-    background: linear-gradient(to right , #60a5fa ,#7e22ce);
+    background: linear-gradient(to right , #60a5fa ,#A877FF);
 }
 
 .box .color-box{
