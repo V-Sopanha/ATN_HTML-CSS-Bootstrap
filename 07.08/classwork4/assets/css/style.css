@@ -51,7 +51,7 @@
 }
 /* hover  */
 .col-4:hover .card{
-    background: linear-gradient( #60a5fa,#c084fc);
+    background: linear-gradient(45deg, #60a5fa,#c084fc);
     margin-top: -10px;
 }
 /*  */
