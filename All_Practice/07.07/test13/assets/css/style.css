@@ -1,0 +1,426 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ==================== grid system ======================== */
+
+img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.col-3 {
+    padding-inline: 10px;
+    width: 25%;
+}
+
+.col-4 {
+    padding-inline: 10px;
+    width: calc(100% / 3);
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-inline: -10px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.navbar {
+    background-color: gainsboro;
+}
+
+.nav-brand {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: auto;
+    padding-inline: 10px;
+    text-box: trim-both cap alphabetic;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    list-style: none;
+    text-box: trim-both cap alphabetic;
+}
+
+.navbar-nav .nav-item .nav-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding-block: 30px;
+    padding-right: 30px;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: darkblue;
+}
+
+.nav-btn {
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: #ffffff;
+    padding: 13px 26px;
+    margin-right: 10px;
+}
+
+.nav-btn:hover {
+    background-color: darkblue;
+}
+
+/* ============ drop down ============ */
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 210px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(47, 47, 255, 0.8);
+    color: #ffffff;
+}
+
+.nav-item:hover .dropdown-menu,
+.nav-item:hover #home,
+.nav-item:hover #element {
+    display: block;
+}
+
+#home {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 1200px;
+    left: calc(100% - 550px);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#element {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 1200px;
+    right: calc(100% - 360px);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul {
+    flex-grow: 1;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+}
+
+/* ====================hero section==================== */
+
+.hero-area {
+    background-color: rgba(0, 0, 255, 0.8);
+    height: 90vh;
+    text-align: center;
+    align-content: center;
+}
+
+.hero-title h1 {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.hero-title span {
+    color: #f1f1f1;
+}
+
+/* =================== Team Style 01 section==================== */
+
+.section-title h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.card-01 {
+    position: relative;
+    transition: 0.5s;
+    top: 0;
+    box-shadow: gainsboro 0 0 8px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-01:hover {
+    top: -8px;
+}
+
+.card-01-thumnial {
+    position: relative;
+    z-index: -1;
+}
+
+.card-01-thumnial .card-01-hover {
+    position: absolute;
+    width: 50px;
+    height: 200px;
+    background-color: white;
+    top: 50%;
+    right: -60px;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.card-01:hover .card-01-hover {
+    right: 0;
+}
+
+.card-01-thumnial .card-01-hover-color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 255, 0.4);
+    transition: 0.5s;
+    transform: rotateY(90deg);
+}
+
+.card-01:hover .card-01-hover-color {
+    transform: rotateY(0deg);
+    background-color: rgba(0, 0, 255, 0.4);
+}
+
+.card-01-body {
+    padding-block: 20px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    border-bottom: 2px solid blue;
+}
+
+/* ================ team style 02 area ================*/
+
+.team-style-2 {
+    background-color: #f1f1f1;
+}
+
+.card-02 {
+    position: relative;
+    box-shadow: gainsboro 0 0 8px 0;
+    margin-bottom: 50px;
+}
+
+.card-02-thumnial {
+    position: relative;
+    z-index: 1;
+}
+
+.card-02-thumnial .card-02-back-hover {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    transition: 0.5s;
+}
+
+.card-02:hover .card-02-back-hover {
+    transform: rotateZ(-5deg);
+}
+
+.card-02-body {
+    padding: 20px;
+    position: absolute;
+    color: #ffffff;
+    align-content: center;
+    background-color: rgb(15, 80, 221);
+    text-align: center;
+    z-index: 2;
+    left: 40px;
+    right: 40px;
+    top: 100%;
+    transform: translateY(-50%);
+}
+
+/* =============== team style 03 area ============== */
+
+.card-03 {
+    position: relative;
+    transition: 0.5s;
+    top: 0;
+    box-shadow: gainsboro 0 0 8px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-03:hover {
+    top: -8px;
+}
+
+.card-03-thumnial {
+    position: relative;
+    z-index: -1;
+}
+
+.card-03-thumnial .card-03-hover {
+    position: absolute;
+    height: 50px;
+    left: 40px;
+    right: 40px;
+    border-radius: 5px;
+    background-color: white;
+    bottom: -50px;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.card-03:hover .card-03-hover {
+    bottom: 20px;
+}
+
+.card-03-thumnial .card-03-hover-color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 255, 0.4);
+    transition: 0.5s;
+    transform: rotateY(90deg);
+    border-radius: 5px;
+}
+
+.card-03:hover .card-03-hover-color {
+    transform: rotateY(0deg);
+}
+
+.card-03-body {
+    border-radius: 5px;
+    padding-block: 20px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid blue;
+}
+
+/* =============== team style 04 area ============== */
+
+.team-style-4 {
+    background-color: #f1f1f1;
+}
+
+.card-04 {
+    box-shadow: gainsboro 0 0 8px 0;
+}
+
+.card-04-thumnial {
+    position: relative;
+}
+
+.card-04-thumnial .card-04-social-hover {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    padding: 30px;
+    background-color: rgba(20, 71, 230, 0.95);
+    opacity: 0;
+    top: calc(100% + 30px);
+    transition: 0.5s;
+}
+
+.card-04:hover .card-04-social-hover {
+    top: calc(100% - 30px);
+    opacity: 1;
+}
+
+.card-04-body {
+    height: 100px;
+    align-content: center;
+    background-color: white;
+    text-align: center;
+}
+
+/* ================ team style 05 area ================== */
+
+.card-05 {
+    height: 290px;
+    background-color: blue;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card-05-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0);
+    transition: 0.5s;
+}
+
+.card-05:hover .card-05-hover {
+    background-color: rgba(0, 0, 255, 0.7);
+}
+
+.card-05 .card-05-caption {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: 0.8s;
+    text-align: center;
+    opacity: 0;
+}
+
+.card-05:hover .card-05-caption {
+    bottom: 40%;
+    opacity: 1;
+    color: #ffffff;
+}
