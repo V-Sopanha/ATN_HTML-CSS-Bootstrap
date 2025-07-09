@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.navbar .nav-brand img {
+    width: 160px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+}
+
+i {
+    font-size: 15px;
+}
+
+.navbar .navbar-button {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .navbar-button .btn {
+    display: block;
+    padding: 18px 30px;
+    text-decoration: none;
+    background-color: #2b7fff;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 19px;
+    text-box: trim-both cap alphabetic;
+    transition: 0.3s;
+}
+
+.navbar .navbar-button .btn:hover {
+    background-color: #0267ff;
+}
+
+/* Drop down example */
+
+.navbar .navbar-nav .dropdown {
+    position: relative;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu {
+    list-style-type: none;
+    position: absolute;
+    width: 220px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    display: none;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu li a {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    transition: 0.5s;
+}
+
+.navbar .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu li:hover a {
+    background-color: #2b7fff;
+    color: #fff;
+    padding: 15px 25px;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu li:last-child a {
+    border-bottom: 0;
+}
+
+/* sub dropdown menu */
+.navbar .navbar-nav .dropdown .dropdown-menu .sub-dropdown-menu {
+    list-style-type: none;
+    position: absolute;
+    width: 220px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    left: 100%;
+    top: 0;
+    display: none;
+}
+
+.navbar
+    .navbar-nav
+    .dropdown
+    .dropdown-menu
+    .dropdown:hover
+    .sub-dropdown-menu {
+    display: block;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown .sub-dropdown-menu li a {
+    padding: 15px 20px;
+    background-color: transparent;
+    color: #333;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown .sub-dropdown-menu li:hover a {
+    background-color: #2b7fff;
+    color: #fff;
+    padding: 15px 25px;
+}
