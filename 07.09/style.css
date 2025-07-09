@@ -14,11 +14,14 @@ body {
     margin: auto;
 }
 
-
-.navbar .container {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.container .navbar-brand img{
+    width: 180px;
+    height: auto;
 }
 
 .navbar .navbar-nav {
@@ -28,7 +31,7 @@ body {
 
 .navbar .navbar-nav .nav-item .nav-link {
     display: block;
-    padding: 20px 20px;
+    padding: 20px 15px;
     text-decoration: none;
     font-size: 19px;
     font-weight: 500;
@@ -58,5 +61,5 @@ i {
 }
 
 .navbar .navbar-button .btn:hover {
-    background-color: #0267ff;
+    background: linear-gradient(#174dff,#25eb43);
 }
