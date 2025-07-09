@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: Poppins;
-    border-bottom: 1px solid #ddd;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border-bottom: 1px solid #ddd; */
 }
 
 .container {
@@ -36,9 +36,10 @@ body {
     font-size: 19px;
     font-weight: 500;
     color: black;
+    transition: 0.3s;
 }
 
-i {
+.navbar .navbar-nav .nav-item .nav-link i {
     font-size: 15px;
 }
 
@@ -49,17 +50,52 @@ i {
 
 .navbar .navbar-button .btn {
     display: block;
-    padding: 18px 30px;
+    padding: 12px 30px;
     text-decoration: none;
     background-color: #2b7fff;
     color: #fff;
     border-radius: 50px;
     font-weight: 500;
     font-size: 19px;
-    text-box: trim-both cap alphabetic;
     transition: 0.3s;
 }
 
 .navbar .navbar-button .btn:hover {
     background: linear-gradient(#174dff,#25eb43);
+}
+
+.navbar .navbar-nav .nav-item:hover> .nav-link{
+    color: blue;
+}
+/*  */
+.navbar .navbar-nav .dropdown{
+    position: relative;
+}
+.navbar .navbar-nav .dropdown .dropdown-menu{
+    list-style-type : none;
+    position: absolute;
+    width: 220px;
+    border-color: #fff;
+    display: none;
+}
+.navbar .navbar-nav .dropdown .dropdown-menu .nav-link{
+    padding: 12px 20px ;
+    border: 0.5px solid #eee;
+    /* border-top: none; */
+}
+.navbar .navbar-nav .dropdown:hover .dropdown-menu{
+    display: block;
+    /* border-radius: 7px; */
+    
+}
+.navbar .navbar-nav .dropdown .dropdown-menu .nav-item:hover .nav-link{
+    background-color: #2b7fff;
+    color: white;
+    padding: 12px 25px;
+}
+.navbar .navbar-nav .dropdown .dropdown-menu .nav-item:first-child .nav-link{
+    border-radius: 7px 7px 0 0 !important;
+}
+.navbar .navbar-nav .dropdown .dropdown-menu .nav-item:last-child .nav-link{
+    border-radius: 0 0 7px 7px !important;
 }
