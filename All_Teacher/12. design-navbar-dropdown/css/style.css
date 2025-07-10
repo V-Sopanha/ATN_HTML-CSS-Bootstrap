@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eee;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navbar-brand img {
+    width: 140px;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    padding: 18px 30px;
+    display: block;
+    color: #333;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link i {
+    font-size: 15px;
+}
+
+
+.navbar .navbar-nav .nav-item:hover>.nav-link {
+    color: blue;
+}
+
+/* .dropdown style */
+.navbar .navbar-nav .dropdown {
+    position: relative;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu {
+    list-style-type: none;
+    position: absolute;
+    width: 220px;
+    background-color: #fff;
+    display: none;
+    border: 1px solid #ddd;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu .nav-link {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    border-radius: 7px;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu .nav-item:hover>.nav-link {
+    background-color: #155dfc;
+    color: #fff;
+    padding: 12px 25px
+}
+
+.navbar .navbar-nav .dropdown .nav-item:first-child>.nav-link {
+    border-radius: 7px 7px 0 0 !important
+}
+
+.navbar .navbar-nav .dropdown .nav-item:last-child>.nav-link {
+    border-radius: 0 0 7px 7px !important
+}
+
+
+.navbar .dropdown .dropdown-menu .sub-dropdown-menu {
+    list-style-type: none;
+    position: absolute;
+    width: 220px;
+    background-color: #fff;
+    left: 100%;
+    top: 0;
+    display: none;
+}
+
+.navbar .dropdown .dropdown-menu .dropdown:hover .sub-dropdown-menu {
+    display: block;
+}
