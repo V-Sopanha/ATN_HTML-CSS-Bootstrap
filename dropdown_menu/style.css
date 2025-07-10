@@ -56,7 +56,6 @@ i {
     border-radius: 50px;
     font-weight: 500;
     font-size: 19px;
-    text-box: trim-both cap alphabetic;
     transition: 0.3s;
 }
 

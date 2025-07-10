@@ -24,9 +24,7 @@ header {
     justify-content: space-between;
 }
 
-.navbar .navbar-brand img {
-    width: 140px;
-}
+
 
 .navbar .navbar-nav {
     display: flex;
