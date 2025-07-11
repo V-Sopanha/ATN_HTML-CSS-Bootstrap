@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+header {
+    width: 100%;
+    background-color: #ddd;
+    /* position: sticky;
+    top: 0; */
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.profile-header .profile-image img {
+    padding-block: 20px;
+    height: 200px;
+}
+
+.profile-header .profile-social-link a {
+    text-decoration: none;
+}
+
+.profile-header .profile-social-link i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    align-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.profile-header .profile-body {
+    margin-right: auto;
+}
+
+.profile-header .profile-body p {
+    margin-block: 10px;
+}
+
+.profile-header .profile-action button {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.profile-header .profile-action .ctb {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(15, 179, 15);
+    border-radius: 8px;
+}
+
+/* ============= Main section =============== */
+
+i {
+    margin-right: 5px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -10px;
+}
+
+[class*="col-"] {
+    margin-bottom: 20px;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-8 {
+    padding-inline: 10px;
+    width: calc(8 * 100% / 12);
+}
+
+.col-4 {
+    padding-inline: 10px;
+    width: calc(100% / 3);
+}
+
+.box {
+    border-radius: 5px;
+    padding: 30px 20px;
+    background-color: #fff;
+}
+
+/* ======================================== */
+
+.latest-projects .project-feature-image {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.latest-projects .project-lists .project-image {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.address a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.address a:first-child {
+    color: gray;
+}
+
+.address a i {
+    color: gray;
+}
+
+.address a {
+    color: green;
+}
+
+.skills .skills-description p {
+    margin-bottom: 20px;
+}
+
+/* .skills .skills-list .skills-item > label{
+
+} */
+
+.skills .skills-list [class*="progess-bar"] {
+    width: 100%;
+    height: 15px;
+    border-radius: 50px;
+    background-color: rgb(173, 173, 173);
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skills-list [class*="progess-bar"]::after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    border-radius: 50px;
+    background-color: green;
+}
+
+.skills .skills-list .ruby {
+    margin-bottom: 35px;
+}
+
+.skills .skills-list .python::after {
+    width: 90%;
+}
+
+.skills .skills-list .javascript::after {
+    width: 95%;
+}
+
+.skills .skills-list .html::after {
+    width: 80%;
+}
+
+.skills .skills-list .ruby::after {
+    width: 70%;
+}
+
+.skills .skills-link {
+    text-decoration: none;
+    color: green;
+    font-weight: 500;
+}

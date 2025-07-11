@@ -2,67 +2,162 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Lee - Web Developer</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <header>
+
+    <header class="header">
         <div class="container">
-            <div class="header">
-                <div class="personal">
-                <div class="photo"><img src="assets/image/profile.png" alt=""></div>
-                <div class="card">
-                    <h1>James Lee</h1>
-                    <span>Web Developer</span>
-                    <div class="icon">
-                        <ul class="icon-item">
-                            <li>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-brands fa-discord"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
-                            </li>
+            <div class="header-content">
+                <div class="personal-info">
+                    <div class="profile-picture">
+                        <img src="assets/image/profile.png" alt="James Lee">
+                    </div>
+                    <div class="personal-details">
+                        <h1>James Lee</h1>
+                        <p class="job-title">Web Developer</p>
+                        <ul class="social-links">
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                </div>
-                <div class="contact">
-                    <div class="dark-mode">
-                        <a href="#"><i class="fa-solid fa-toggle-off"></i><span> Dark Mode</span></a>
-                    </div>
-                    <div class="contact-me">
-                        <a href="#"><i class="fa-brands fa-telegram"></i><span> CONTACT ME</span></a>
-                    </div>
+                <div class="header-actions">
+                    <a href="#" class="dark-mode-toggle">
+                        <i class="fa-solid fa-moon"></i> Dark Mode
+                    </a>
+                    <a href="#" class="contact-btn">
+                        <i class="fa-solid fa-paper-plane"></i> CONTACT ME
+                    </a>
                 </div>
             </div>
         </div>
     </header>
+
     <main>
         <div class="container">
-            <div class="main">
-                <div class="row">
-                    <div class="col-8">
-                        <div class="about-me">
-                            <h3>About Me</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo beatae vel repudiandae. Iure quidem soluta, excepturi veniam cum mollitia voluptate, labore dignissimos voluptas, neque atque odit delectus ipsam tempore. Beatae fugiat ducimus similique nulla amet doloremque nobis illum ex officiis quia, aspernatur sunt inventore distinctio unde at sapiente delectus? Voluptatibus, molestias est sit, quod, et aperiam minima </p>
+            <div class="main-layout">
+                <div class="left-column">
+                    <section class="card about-me">
+                        <h2>About Me</h2>
+                        <p>Write a bit of intro about yourself. It's a good idea to include your personal interests and hobbies as well. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </section>
+
+                    <section class="latest-projects">
+                        <h2>Latest Projects</h2>
+                        <div class="card project-main">
+                            <img src="assets/image/project-featured.jpg" alt="Launch Project Thumbnail">
+                            <h3>Launch - The perfect Bootstrap template for SaaS products</h3>
+                            <p>You can promote your main project here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+                            <a href="#" class="btn-back-project"><i class="fa-solid fa-arrow-left"></i> Back My Project</a>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="location_and_link">
-                            
+                        <div class="project-grid">
+                            <div class="card project-item">
+                                <img src="assets/image/project-1.png" alt="CodePro Thumbnail">
+                                <div class="project-info">
+                                    <h4>CodePro - Bootstrap Startup Template For Software Projects</h4>
+                                    <p>You can put one of your secondary projects here. Suspendisse in tellus dolor.</p>
+                                    <a href="#">Find out more</a>
+                                </div>
+                            </div>
+                            <div class="card project-item">
+                                <img src="assets/image/project-2.png" alt="DevCard Thumbnail">
+                                <div class="project-info">
+                                    <h4>DevCard - Bootstrap Portfolio Template for Software Developers</h4>
+                                    <p>You can put one of your secondary projects here. Suspendisse in tellus dolor.</p>
+                                    <a href="#">Find out more</a>
+                                </div>
+                            </div>
+                            <div class="card project-item">
+                                <img src="assets/image/project-3.png" alt="Instance Thumbnail">
+                                <div class="project-info">
+                                    <h4>Instance - Bootstrap Portfolio Template for Aspiring Full Stack Developers</h4>
+                                    <p>You can put one of your secondary projects here. Suspendisse in tellus dolor.</p>
+                                     <a href="#">Find out more</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+                </div>
+
+                <div class="right-column">
+                    <section class="card contact-details">
+                        <ul>
+                            <li><i class="fa-solid fa-map-marker-alt"></i> San Francisco, US</li>
+                            <li><i class="fa-solid fa-envelope"></i> james@website.com</li>
+                            <li><i class="fa-solid fa-globe"></i> https://www.website.com</li>
+                        </ul>
+                    </section>
+
+                    <section class="card skills">
+                        <h2>Skills</h2>
+                        <p>Intro about your skill sets here. Keep the list lean and only show your most important skills.</p>
+                        <div class="skill-item">
+                            <p>Python & Django</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p>Javascript & jQuery</p>
+                             <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p>HTML5, CSS3, SASS & LESS</p>
+                             <div class="progress-bar">
+                                <div class="progress" style="width: 98%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p>Ruby on Rails</p>
+                             <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                         <a href="#" class="more-on-github"><i class="fa-brands fa-github"></i> More on GitHub</a>
+                    </section>
+
+                    <section class="card testimonials">
+                        <h2>Testimonials</h2>
+                        <div class="testimonial-item">
+                            <blockquote>
+                                <p>"James is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!"</p>
+                                <cite>Tom Ato</cite>
+                            </blockquote>
+                        </div>
+                        <a href="#" class="more-on-linkedin"><i class="fa-brands fa-linkedin"></i> More on LinkedIn</a>
+                    </section>
+
+                    <section class="card education">
+                        <h2>Education</h2>
+                        <div class="education-item">
+                            <p><strong>MSc Computer Science</strong></p>
+                            <p>University College London <small>(2016-2017)</small></p>
+                        </div>
+                        <div class="education-item">
+                            <p><strong>BSc Computer Science</strong></p>
+                            <p>University of Bristol <small>(2013-2016)</small></p>
+                        </div>
+                    </section>
+
+                     <section class="card languages">
+                        <h2>Languages</h2>
+                        <div class="language-item">
+                            <p><strong>English</strong> <small>Native Speaker</small></p>
+                            <p class="stars">★★★★★</p>
+                        </div>
+                         <div class="language-item">
+                            <p><strong>Spanish</strong> <small>Professional Proficiency</small></p>
+                            <p class="stars">★★★☆☆</p>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
