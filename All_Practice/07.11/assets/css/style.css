@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: lightblue;
+    background-color: rgb(181, 181, 181);
 }
 
 header {
@@ -35,6 +35,11 @@ img {
 .profile-header .profile-image img {
     padding-block: 20px;
     height: 200px;
+}
+
+.profile-header .personal-info {
+    display: flex;
+    align-items: center;
 }
 
 .profile-header .profile-social-link a {
