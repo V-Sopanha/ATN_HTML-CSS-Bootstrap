@@ -45,7 +45,7 @@ h1 {
 .navbar::after {
     content: "";
     position: absolute;
-    bottom: -20px;
+    bottom: -20px; 
     right: 0px;
     width: 0px;
     height: 0px;
