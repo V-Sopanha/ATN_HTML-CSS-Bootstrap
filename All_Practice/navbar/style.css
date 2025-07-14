@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+    width: 1200px;
+    height: 90vh;
+    margin: 5vh auto;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.navbar {
+    width: calc(100% + 40px);
+    background-color: #020617;
+    margin-left: -20px;
+    border-top: 3px solid rgb(15, 179, 15);
+    border-radius: 3px 3px 0 0;
+    position: relative;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+    transform: rotate(0deg);
+}
+
+.navbar::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+    transform: rotate(0deg);
+}
+
+.navbar .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding-inline: 35px;
+    transition: color 0.4s, margin-top 0.3s;
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-link {
+    background-color: #1e293b;
+    margin: -25px 0 0 25px;
+    position: relative;
+    border-radius: 0.22rem 0.22rem 5px 5px;
+    color: rgb(15, 179, 15);
+    font-weight: bold;
+    border-style: none solid solid solid;
+    border-width: 3px;
+    border-color: rgb(15, 179, 15);
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-link:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -25px;
+    top: 0;
+    border-style: solid;
+    border-width: 0 0 22px 25px;
+    border-color: transparent transparent #1e293b transparent;
+    transform: rotate(0deg);
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-link::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -25px;
+    top: 0;
+    border-style: solid;
+    border-width: 22px 0 0 25px;
+    border-color: transparent transparent transparent #1e293b;
+    transform: rotate(0deg);
+}
