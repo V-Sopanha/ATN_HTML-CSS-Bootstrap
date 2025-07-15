@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.header{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+}
+.header .logo{
+    padding: 20px 0 10px 150px;
+}
+.header .logo img{
+    width: 80px;
+    height: 80px;
+}
+.navbar {
+    width: 100%;
+    background-color: red;
+}
+
+.navbar .navbar-nav {
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    /* background-color: #333; */
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    padding: 15px 15px;
+    display: block;
+    color:rgba(255, 255, 255, 0.5);
+    font-weight: 900;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: white;
+}
+.navbar .navbar-nav .nav-item  .icon{
+    /* width: ; */
+    height: 100%;
+    background-color: #D90B16;
+}
+/*  */
+.main{
+    width: 100%;
+    height: 550px;
+    /* background-color: black; */
+}
+.container{
+    width: 1200px;
+    margin: 20px auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    overflow: hidden;
+}
+.col-9{
+    width: calc(75%);
+    height: 100%;
+    background-color: #D90B16;
+}
+.col-3{
+    width: calc(25% - 10px);
+    height: 100%;
+    /* background-color: aqua; */
+    margin-left: 10px;
+}
+.col-7{
+    width: 58.33333333333333%;
+    height: 225px;
+    background-color: rgb(15, 41, 41);
+}
+.col-5{
+    width: 41.66666666666667%;
+    height: 225px;
+    /* background-color: rgb(124, 167, 167); */
+    overflow: hidden;
+}
+/*  */
+.main .container .row .col-9 .col-7:first-of-type{
+    background-image: url('../img/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -10px;
+     position: relative;
+}
+.main .container .row .col-9 .col-7:first-of-type::before{
+    content: 'បច្ចេកវិទ្យា';
+    padding: 5px 10px 0 10px;
+    background-color: blue;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.main .container .row .col-9 .col-7{
+    background-image: url('../img/4.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px -10px;
+    background-size: cover;
+    position: relative;
+    /* background-color: rgb(213, 222, 219); */
+}
+.main .container .row .col-9 .col-7::before{
+    content: 'ជីវិតនិងសង្គម';
+    padding: 5px 10px 0 10px;
+    background-color: rgb(0, 209, 0);
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.main .container .row .col-9  .col-5{
+    /* background-color: rgb(177, 189, 185); */
+    background-image: url('../img/3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 140%;
+     position: relative;
+}
+
+.main .container .row .col-9  .col-5::after{
+    content: 'កីឡា';
+    padding: 5px 10px 0 10px;
+    background-color: orange;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.main .container .row .col-9 .col-5:last-of-type{
+    /* background-color: rgb(177, 189, 185); */
+    background-image: url('../img/5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    /* transform: scale(1.5); */
+    background-size: 140%;
+     position: relative;
+}
+
+.main .container .row .col-9 .col-5:last-of-type::after{
+    content: 'ជីវិតនិងសង្គម';
+    padding: 5px 10px 0 10px;
+    background-color: rgb(2, 200, 2);
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+/*  */
+.main .container .row .col-9 .col-7 .content{
+    
+}
