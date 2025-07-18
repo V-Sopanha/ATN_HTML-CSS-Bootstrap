@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar ">
+        <div class="container">
+            <h1 class="navbar-brand animate__animated animate__headShake animate__infinite	infinite">
+                animate__headShake
+            </h1>
+        </div>
+    </nav>
+
+     <!-- ============================ -->
+
+    <section class="banner">
+        <div class="container">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/f1.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/f3.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/f4.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/f5.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/f6.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/f7.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/f8.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/f9.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/f10.jpeg" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ========= -->
+     <!-- ============================ -->
+
+    <section class="blogs">
+        <div class="container">
+            <h1 class="sec-title">Title</h1>
+            <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sunt nostrum commodi blanditiis ad ut magnam voluptatem, iste libero beatae.</p>
+            
+            <div class="row">
+                <div class="col-4" >
+                    <div class="card" data-aos="fade-up">1</div>
+                </div>
+                <div class="col-4">
+                    <div class="card">2</div>
+                </div>
+                <div class="col-4">
+                    <div class="card" data-aos="fade-up-left">3</div>
+                </div>
+                <div class="col-4">
+                    <div class="card" data-aos="flip-up">4</div>
+                </div>
+                <div class="col-4">
+                    <div class="card" data-aos="zoom-in">5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- aos -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        AOS.init();
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop : true,
+            speed : 1000, //speed slides show
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
