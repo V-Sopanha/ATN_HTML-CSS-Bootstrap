@@ -8,14 +8,15 @@
     --color-bg-header: #ffffff;
     --color-bg-body: #DAE3E7;
     --color-bg: white;
+    --bg-color-icon: grey;
 
 }
 
 [data-theme="dark"] {
     --color-bg-body: black;
     --text-color: white;
-    --color-bg: #1E2124;
-
+    --color-bg: #18191b;
+    --bg-color-icon: rgb(44, 44, 44);
 }
 
 
@@ -60,7 +61,7 @@ img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: grey;
+    background-color: var(--bg-color-icon);
     align-content: center;
     text-align: center;
     color: #fff;
@@ -171,7 +172,7 @@ section {
 .latest-projects .project-feature-image .title {
     width: 150px;
     height: 50px;
-    background-color: blue;
+    background-color: #479FC8;
     font-size: 22px;
     color: #fff;
     text-align: center;
@@ -252,7 +253,7 @@ a {
 }
 
 .skills .skills-list .html::after {
-    width: 80%;
+    width: 90%;
 }
 
 .skills .skills-list .ruby::after {
