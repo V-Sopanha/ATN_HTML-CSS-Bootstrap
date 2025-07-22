@@ -1,64 +1,45 @@
+/* ================== Base ================== */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #DAE3E7;
 }
 
-header{
-    width: 100%;
-    background-color: white;
-}
+/* ================== Layout ================== */
 .container {
     width: 1200px;
     margin: auto;
 }
 .row {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
+[class^="col-"] {
+    /* Responsive columns */
+}
+.col-1 { width: 8.3333%; }
+.col-2 { width: 16.6667%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.3333%; }
+.col-5 { width: 41.6667%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.3333%; }
+.col-8 { width: 66.6667%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.3333%; }
+.col-11 { width: 91.6667%; }
+.col-12 { width: 100%; }
 
-.col-1 {
-  width: 8.333333333333333%;
+/* ================== Header ================== */
+header {
+    width: 100%;
+    background-color: white;
 }
-.col-2 {
-  width: 16.66666666666667%;
-}
-.col-3 {
-  width: 25%;
-}
-.col-4 {
-  width: 33.33333333333333%;
-}
-.col-5 {
-  width: 41.66666666666667%;
-}
-.col-6 {
-  width: 50%;
-}
-.col-7 {
-  width: 58.33333333333333%;
-}
-.col-8 {
-  width: 66.66666666666667%;
-}
-.col-9 {
-  width: 75% ;
-}
-.col-10 {
-  width: 83.33333333333333%;
-}
-.col-11 {
-  width: 91.66666666666667%;
-}
-.col-12 {
-  width: 100%;
-}
-/* ================ */
-.profile-header{
+.profile-header {
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -68,12 +49,22 @@ header{
     padding-block: 20px;
     height: 200px;
 }
+.profile-header .profile-name h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #484848;
+}
+.profile-header .profile-name span {
+    font-size: 20px;
+    color: #484848;
+}
 .profile-header .profile-name ul {
     list-style: none;
     display: flex;
-    gap: 10px
+    gap: 10px;
 }
-.profile-header .profile-name ul li i{
+.profile-header .profile-name ul li i {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -82,18 +73,6 @@ header{
     text-align: center;
     color: #fff;
     margin-top: 10px;
-    
-}
-.profile-header .profile-name h1{
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-.profile-header .profile-name span {
-    font-size: 20px;
-}
-.profile-header .profile-name h1,span{
-    color: #484848;
 }
 .profile-header-right {
     display: flex;
@@ -103,7 +82,6 @@ header{
     gap: 15px;
     height: 100%;
 }
-
 .profile-header-right .btn-light-dark-mode {
     border: none;
     background: none;
@@ -119,8 +97,6 @@ header{
     padding-right: 5px;
     color: #484848;
 }
-
-
 .profile-header-right .btn-contact {
     display: flex;
     align-items: center;
@@ -145,17 +121,20 @@ header{
 .profile-header-right .btn-contact i {
     font-size: 20px;
 }
-/* =================== about me */
-main{
+
+/* ================== Main ================== */
+main {
     margin-top: 50px;
-    /* background-color: aqua; */
 }
 
+/* ================== Card ================== */
 .profile-detail-area .card {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
 }
+
+/* ================== About Me ================== */
 .profile-detail-area .about-me {
     margin-bottom: 30px;
 }
@@ -169,7 +148,8 @@ main{
     color: #666;
     margin-bottom: 20px;
 }
-/*  profile-detail-area  */
+
+/* ================== Project Info ================== */
 .profile-detail-area .project-info .latest-project {
     display: flex;
     flex-direction: column;
@@ -180,8 +160,6 @@ main{
     font-size: 24px;
     margin-bottom: 15px;
     color: #484848;
-}
-.profile-detail-area .project-info .latest-project h2:first-child {
     align-self: flex-start;
     text-align: left;
 }
@@ -198,7 +176,8 @@ main{
     display: block;
     padding: 5px;
 }
-.latest-project-image .title {
+.latest-project-image .title,
+.profile-detail-area .project-info .title {
     width: 150px;
     height: 50px;
     background-color: #479FC8;
@@ -219,78 +198,68 @@ main{
     border-radius: 10px;
     margin-bottom: 15px;
     position: relative;
-}   
-.profile-detail-area .project-info .title {
-    width: 150px;
-    height: 50px;
-    background-color: #479FC8;
-    font-size: 22px;
-    color: #fff;
-    text-align: center;
-    align-content: center;
-    font-weight: bold;
-    transform: rotate(45deg);
-    position: absolute;
-    right: -40px;
-    top: 10px;
 }
 .profile-detail-area .project-info p {
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
-}       
+}
 .profile-detail-area .project-info a {
     display: inline-block;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-}   
-.profile-detail-area .project-info .btn-blue{
+}
+.profile-detail-area .project-info .btn-blue {
     background-color: #479FC8;
     padding: 10px 20px;
     border-radius: 8px;
 }
-.profile-detail-area .project-info .btn-blue i{
+.profile-detail-area .project-info .btn-blue i {
     padding-right: 5px;
     font-size: 18px;
 }
-/* ====== project list */
 
+/* ===== Project List ===== */
 .profile-detail-area .project-info .project-list {
-    margin: 30px 0 30px 0;
+    margin: 30px 0;
 }
-
-.profile-detail-area .project-info  .project-list img {
+.profile-detail-area .project-info .project-list img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
 }
-
-.profile-detail-area .project-info  .project-list .project-content {
+.profile-detail-area .project-info .project-list .project-content {
     margin: 0 0 20px 20px;
 }
-.profile-detail-area .project-info  .project-list .project-content h2 {
+.profile-detail-area .project-info .project-list .project-content h2 {
     font-size: 18px;
-    margin-bottom: 15px;   
+    margin-bottom: 15px;
     color: #484848;
 }
-.profile-detail-area .project-info  .project-list .project-content p {
+.profile-detail-area .project-info .project-list .project-content p {
     font-size: 16px;
     color: #666;
     margin-bottom: 10px;
 }
 .profile-detail-area .project-info .project-list .project-content a {
     display: inline-block;
-    color:  #70C18F; 
+    color: #70C18F;
     text-decoration: none;
     font-weight: 500;
 }
-/* =========== */
-.profile-detail-area .address,.skill, .testimonial, .education, .language {
+
+/* ================== Sidebar Cards ================== */
+.profile-detail-area .address,
+.profile-detail-area .skill,
+.profile-detail-area .testimonial,
+.profile-detail-area .education,
+.profile-detail-area .language {
     margin: 0 0 20px 20px;
 }
-/* ===== */
+
+/* ===== Address ===== */
 .profile-detail-area .address .card-body ul {
     list-style: none;
     padding: 0;
@@ -298,19 +267,19 @@ main{
 .profile-detail-area .address .card-body ul li {
     margin-bottom: 10px;
 }
-.profile-detail-area .address .card-body ul li a{
+.profile-detail-area .address .card-body ul li a {
     text-decoration: none;
     color: #70C18F;
 }
 .profile-detail-area .address .card-body ul li:first-child a {
     color: #666;
 }
-.profile-detail-area .address .card-body ul li i{
+.profile-detail-area .address .card-body ul li i {
     padding-right: 10px;
     color: rgb(208, 208, 208);
 }
 
-/* ========== */
+/* ===== Skill ===== */
 .profile-detail-area .skill .card-body h2 {
     font-size: 24px;
     margin-bottom: 15px;
@@ -318,22 +287,20 @@ main{
 }
 .profile-detail-area .skill .card-body p {
     font-size: 16px;
-    color: #666;    
+    color: #666;
     margin-bottom: 20px;
 }
 .profile-detail-area .skill .card-body ul {
-    list-style: none;  
+    list-style: none;
     padding: 0;
 }
-
 .profile-detail-area .skill .card-body .skill-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 8px;
 }
-
-.profile-detail-area .skill .card-body .skill-row  h4 {
+.profile-detail-area .skill .card-body .skill-row h4 {
     font-size: 14px;
     color: #484848;
 }
@@ -342,7 +309,7 @@ main{
     color: #666;
 }
 .profile-detail-area .skill .card-body .skill-row i {
-    color: #ffffff;
+    color: #fff;
     font-size: 10px;
     width: 15px;
     height: 15px;
@@ -352,7 +319,6 @@ main{
     align-items: center;
     justify-content: center;
 }
-
 .profile-detail-area .skill .card-body .skill-bar {
     width: 100%;
     height: 15px;
@@ -362,30 +328,19 @@ main{
     margin-bottom: 30px;
     overflow: hidden;
 }
-
 .profile-detail-area .skill .card-body .skill-bar .skill-value {
     height: 100%;
     border-radius: 50px;
     background-color: #21c460;
     position: absolute;
 }
-
-.profile-detail-area .skill .skill-bar .skill-value.python {
-    width: 90%;
-}
-.profile-detail-area .skill .skill-bar .skill-value.js {
-    width: 95%;
-}
-.profile-detail-area .skill .skill-bar .skill-value.html {
-    width: 90%;
-}
-.profile-detail-area .skill .skill-bar .skill-value.ruby {
-    width: 70%;
-}
-
+.profile-detail-area .skill .skill-bar .skill-value.python { width: 90%; }
+.profile-detail-area .skill .skill-bar .skill-value.js { width: 95%; }
+.profile-detail-area .skill .skill-bar .skill-value.html { width: 90%; }
+.profile-detail-area .skill .skill-bar .skill-value.ruby { width: 70%; }
 .profile-detail-area .skill .card-body a {
     display: inline-block;
-    color:  #70C18F; 
+    color: #70C18F;
     text-decoration: none;
     font-weight: 500;
 }
@@ -393,7 +348,8 @@ main{
     padding: 15px 0 15px 5px;
     font-size: 18px;
 }
-/* ====== testimonails */
+
+/* ===== Testimonials ===== */
 .profile-detail-area .testimonial h2 {
     font-size: 24px;
     margin-bottom: 15px;
@@ -401,7 +357,6 @@ main{
 }
 .profile-detail-area .testimonial-item {
     background-color: #fff;
-    /* padding: 20px; */
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -423,10 +378,9 @@ main{
     font-size: 14px;
     color: #666;
 }
-
 .profile-detail-area .testimonial .card-body a {
     display: inline-block;
-    color:  #70C18F; 
+    color: #70C18F;
     text-decoration: none;
     font-weight: 500;
 }
@@ -434,12 +388,13 @@ main{
     padding: 15px 0 15px 5px;
     font-size: 18px;
 }
-/* ========= education */
+
+/* ===== Education ===== */
 .profile-detail-area .education h2 {
     font-size: 20px;
-    margin : 10px 0 28px 0;
+    margin: 10px 0 28px 0;
     color: #616161;
-}   
+}
 .profile-detail-area .education .card-body ul {
     list-style: none;
     padding: 0;
@@ -453,12 +408,13 @@ main{
     margin-bottom: 5px;
 }
 .profile-detail-area .education .card-body ul li span {
-    padding-left: 22px ;
+    padding-left: 22px;
     font-size: 14px;
     color: #616161;
     margin-bottom: 5px;
 }
-/* ========== language */
+
+/* ===== Language ===== */
 .profile-detail-area .language .card-body ul {
     list-style: none;
     padding: 0;
@@ -468,19 +424,19 @@ main{
 }
 .profile-detail-area .language h2 {
     font-size: 20px;
-    margin : 10px 0 28px 0;
+    margin: 10px 0 28px 0;
     color: #616161;
 }
 .profile-detail-area .language span {
     font-size: 14px;
     color: #616161;
-
 }
 .profile-detail-area .language span i {
     color: #21c460;
     padding-right: 2px;
 }
-/* ============ foooter */
+
+/* ================== Footer ================== */
 footer {
     background-color: rgb(75, 75, 75);
     margin-top: 70px;

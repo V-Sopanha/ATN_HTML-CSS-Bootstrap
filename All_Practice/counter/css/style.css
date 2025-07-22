@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.item-list {
+padding-left: 25px;
+  counter-reset: item;
+}
+.item-list > h4 {
+  counter-increment: item;
+}
+.item-list > h4::after {
+  content: " " counter(item) "";
+  font-weight: bold;
+  color: black;
+}
+
+.list-1 {
+padding-left: 25px;
+  counter-reset: subitem;
+  margin-left: 20px;
+}
+.list-1 > h4 {
+  counter-increment: subitem;
+}
+.list-1 > h4::after {
+  /* content: " " counter(item) "." counter(subitem); */
+  color: teal;
+}
+
+.list-2 {
+    padding-left: 25px;
+  counter-reset: subsubitem;
+  margin-left: 40px;
+}
+.list-2 > h4 {
+  counter-increment: subsubitem;
+}
+.list-2 > h4::after {
+  content: " " counter(item) "." counter(subitem) "." counter(subsubitem);
+  color: rebeccapurple;
+}
+
+.list-3 {
+    padding-left: 25px;
+  counter-reset: subsubsubitem;
+  margin-left: 60px;
+}
+.list-3 > h4 {
+  counter-increment: subsubsubitem;
+}
+.list-3 > h4::after {
+  content: " " counter(item) "." counter(subitem) "." counter(subsubitem) "." counter(subsubsubitem);
+  color: orangered;
+}
+
+/* Remove ::before rules for h4
+.item-list > h4::before,
+.list-1 > h4::before,
+.list-2 > h4::before,
+.list-3 > h4::before {
+  content: "";
+} */
+
+/* li {
+  counter-increment: list;
+  margin-bottom: 0.3em;
+}
+
+.List-1 li::before {
+  content: counter(list, upper-roman) ". ";
+  font-weight: bold;
+  color: black;
+}
+
+.List-1 li::after{
+    content:  counters(list, ".")" ";
+} */
+/* 
+
+.List-2 {
+  counter-reset: item;
+}
+
+.List-2 > li::before {
+  content: counter(item, lower-alpha) ". ";
+  color: teal;
+}
+
+.List-3 {
+  counter-reset: item;
+}
+
+.List-3 > li::before {
+  content: counter(item) ".";
+  color: rebeccapurple;
+}
+
+.List-4 {
+  counter-reset: item;
+}
+
+.List-4 > li::before {
+  content: counter(item, decimal) ".";
+  color: orangered;
+}
+ */
