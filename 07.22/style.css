@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+ul li a {
+    display: block;
+    padding: 10px 24px;
+    text-decoration: none;
+}
+ul li a:hover::after{
+    content: " = " attr(href)"";
+    color: red;
+}
+/* ========== */
+.wrapper {
+    width: calc(150px * 4);
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+}
+ 
+.wrapper div{
+    width: 150px;
+    height: 100px; 
+    margin-right : 24px;
+    border: 1px solid grey;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+
+.wrapper div:before{
+    content: attr(class);
+    width: 100%;
+    height: 100px;
+    display: block;
+    text-align: center;
+    align-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+/* =================== Count - Function ================= */
+
+/* .lesson {
+    counter-reset: lesson;
+}
+.lesson h4:after{
+    counter-increment: lesson;
+    content: " : " counter(lesson)"";
+}
+
+.chapter{
+    padding-left: 25px;
+    counter-reset: chapter;
+}
+.chapter h4::after{
+    counter-increment: chapter;
+    content: " " counter(lesson)"." counter(chapter)"";
+} */
+
+.lesson,
+.chapter,
+.section {
+    padding-left: 25px;
+    counter-reset: lesson;
+}
+
+.lesson h4::after,
+.chapter h4::after,
+.section h4::after{
+    counter-increment: lesson;
+    content: ": " counters(lesson, ".")" ";
+}
