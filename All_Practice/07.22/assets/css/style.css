@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100%;
+    background: #2C3D4F;
+}
+.container {
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    width: 100%;
+}
+.navbar-brand {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+.nav-item a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 25px 25px;
+    transition: color 0.2s;
+}
+.nav-item a:hover {
+    color: #19BC9B;
+}
+
+/*  */
+.masthead-avatar {
+    width: 100%;
+    height: 710px;
+    background: #19BC9B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.masthead-avatar .container {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.masthead-avatar .avatar-image {
+    width: 250px;
+    height: 250px;
+    margin-top: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.masthead-avatar .heading {
+    font-size: 65px;
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.masthead-avatar .icon {
+    position: relative;
+    margin: 20px 0 35px 0;
+}
+.masthead-avatar .icon i {
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+.masthead-avatar .icon::before,
+.icon::after {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 4px;
+    background: #fff;
+    border-radius: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.masthead-avatar .icon::before {
+    left: -130px;
+}
+.masthead-avatar .icon::after {
+    right: -130px;
+}
+.masthead-avatar .subtitle {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* ========= */
+.portfolio {
+    width: 100%;
+    background: #F5F5F5;
+    padding: 100px 0 0 0;
+}
+.portfolio .container {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio .portfolio-title {
+    text-align: center;
+    color: #2C3D4F;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.portfolio .icon {
+    position: relative;
+    margin: 50px 0 0 0;
+}
+.portfolio .icon i {
+    font-size: 30px;
+    color: #2C3D4F;
+    z-index: 1;
+    position: relative;
+}
+.portfolio .icon::before,
+.icon::after {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 4px;
+    background: #2C3D4F;
+    border-radius: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.portfolio .icon::before {
+    left: -130px;
+}
+.portfolio .icon::after {
+    right: -130px;
+}
