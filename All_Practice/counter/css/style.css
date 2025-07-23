@@ -1,196 +1,199 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+.container {
+  width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #b0b0b0;
+  border-radius: 10px;
+}
 
+/* ===== Counter Section 2 ===== */
 .item-list {
-    padding-left: 25px;
-    margin-left: 50px;
-    counter-reset: list;
-}
-.item-list > h4 {
-    counter-increment: list;
-}
-.item-list > h4::before{
-  content: counter(list, upper-roman) ". ";
-}
-.item-list > h4::after {
-    content: counters(list, ".") " ";
-    font-weight: bold;
-    color: black;
-}
-
-.list-1 {
-    padding-left: 25px;
-    counter-reset: item-1;
-    margin-left: 20px;
-}
-.list-1 > h4 {
-    counter-increment: item-1;
-    color: rgb(53, 113, 93);
-}
-.list-1 > h4::before {
-  content: counter(list, lower-alpha) ". " ;
-  font-weight: bold;
-}
-.list-1 > h4::after {
-    content:" " counters(list, ".") "." counter(item-1) " ";
-    color: teal;
-    font-weight: bold;
-}
-
-.list-2 {
-    padding-left: 25px;
-    counter-reset: item-2;
-    margin-left: 40px;
-}
-.list-2 > h4 {
-    counter-increment: item-2;
-    color: purple;
-}
-.list-2 > h4::before{
-  content: counter(list, circle) " ";
-}
-.list-2 > h4::after {
-    content:" " counters(list, ".") "." counter(item-1) "." counter(item-2) " ";
-    color: rebeccapurple;
-    font-weight: bold;
-}
-
-.list-3 {
-    counter-reset: item-3;
-    padding-left: 25px;
-    margin-left: 60px;
-}
-.list-3 > h4 {
-    counter-increment: item-3;
-}
-.list-3 > h4::before{
-  content: counter(list, disc) " ";
-}
-.list-3 > h4::after {
-    content: counters(list, ".") "." counter(item-1) "." counter(item-2) "." counter(item-3) " ";
-    color: orangered;
-    font-weight: bold;
-}
-/* ...existing code... */
-
-
-/* .item-list {
-padding-left: 25px;
+  padding-left: 25px;
+  margin-left: 50px;
   counter-reset: list;
 }
+
 .item-list > h4 {
   counter-increment: list;
 }
 
-.item-list > h4::before{
+.item-list > h4::before {
   content: counter(list, upper-roman) ". ";
-  font-weight: bold;
-  color: black;
 }
 
 .item-list > h4::after {
-  content: " " counter(list) "";
+  content: counters(list, ".") " ";
   font-weight: bold;
   color: black;
 }
 
+/* Level 1 (a, b, c...) */
 .list-1 {
-padding-left: 25px;
-  counter-reset: subitem;
+  padding-left: 25px;
   margin-left: 20px;
+  counter-reset: item-1;
 }
+
 .list-1 > h4 {
-  counter-increment: subitem;
+  counter-increment: item-1;
+  color: teal;
 }
-.item-list > h4::before{
-  content: " "
+
+.list-1 > h4::before {
+  content: counter(item-1, lower-alpha) ". ";
+  font-weight: bold;
 }
 
 .list-1 > h4::after {
-  content: " " counte(list) "." counter(subitem);
+  content: " " counters(list, ".") "." counter(item-1) " ";
   color: teal;
+  font-weight: bold;
 }
 
+/* Level 1.1 */
+.list-1-1 {
+  padding-left: 25px;
+  margin-left: 20px;
+  counter-reset: item-1;
+}
+
+.list-1-1 > h4 {
+  counter-increment: item-1;
+  color: rgb(53, 113, 93);
+}
+
+.list-1-1 > h4::before {
+  content: counter(item-1, decimal) ". ";
+  font-weight: bold;
+}
+
+.list-1-1 > h4::after {
+  content: " " counters(list, ".") ". " counter(item-1) " ";
+  color: teal;
+  font-weight: bold;
+}
+
+/* Level 1.1.1 */
+.list-1-1-1 {
+  padding-left: 25px;
+  margin-left: 20px;
+  counter-reset: item-1;
+}
+
+.list-1-1-1 > h4 {
+  counter-increment: item-1;
+  color: rgb(53, 113, 93);
+}
+
+.list-1-1-1 > h4::before {
+  content: counter(item-1, disc) " ";
+  font-weight: bold;
+}
+
+.list-1-1-1 > h4::after {
+  content: " " counters(list, ".") "." counter(item-1) " ";
+  color: teal;
+  font-weight: bold;
+}
+
+/* Level 2 (with circle style) */
 .list-2 {
   padding-left: 25px;
-  counter-reset: subsubitem;
   margin-left: 40px;
+  counter-reset: item-2;
 }
+
 .list-2 > h4 {
-  counter-increment: subsubitem;
+  counter-increment: item-2;
+  color: purple;
 }
+
+.list-2 > h4::before {
+  content: counter(list, circle) " ";
+}
+
 .list-2 > h4::after {
-  content: " " counter(list) "." counter(subitem) "." counter(subsubitem);
+  content: " " counters(list, ".") "." counter(item-1) "." counter(item-2) " ";
   color: rebeccapurple;
-}
-
-.list-3 {
-    padding-left: 25px;
-  counter-reset: subsubsubitem;
-  margin-left: 60px;
-}
-.list-3 > h4 {
-  counter-increment: subsubsubitem;
-}
-.list-3 > h4::after {
-  content: " " counter(list) "." counter(subitem) "." counter(subsubitem) "." counter(subsubsubitem);
-  color: orangered;
-} */
-
-/* Remove ::before rules for h4
-.item-list > h4::before,
-.list-1 > h4::before,
-.list-2 > h4::before,
-.list-3 > h4::before {
-  content: "";
-} */
-
-/* li {
-  counter-increment: list;
-  margin-bottom: 0.3em;
-}
-
-.List-1 li::before {
-  content: counter(list, upper-roman) ". ";
   font-weight: bold;
-  color: black;
 }
 
-.List-1 li::after{
-    content:  counters(list, ".")" ";
-} */
-/* 
-
-.List-2 {
-  counter-reset: item;
+/* Level 3 (deepest nested) */
+.list-3 {
+  padding-left: 25px;
+  margin-left: 60px;
+  counter-reset: item-3;
 }
 
-.List-2 > li::before {
-  content: counter(item, lower-alpha) ". ";
-  color: teal;
+.list-3 > h4 {
+  counter-increment: item-3;
 }
 
-.List-3 {
-  counter-reset: item;
-}
-
-.List-3 > li::before {
-  content: counter(item) ".";
-  color: rebeccapurple;
-}
-
-.List-4 {
-  counter-reset: item;
-}
-
-.List-4 > li::before {
-  content: counter(item, decimal) ".";
+.list-3 > h4::before {
+  content: counter(list, square) " ";
   color: orangered;
 }
- */
 
+.list-3 > h4::after {
+  content: counters(list, ".") "." counter(item-1) "." counter(item-2) "." counter(item-3) " ";
+  color: orangered;
+  font-weight: bold;
+}
 
+/* ===== Counter Section 3 ===== */
+.item-l {
+  padding-left: 25px;
+  margin-left: 50px;
+  counter-reset: item;
+}
+
+.item-l > h4 {
+  counter-increment: item;
+  margin-bottom: 10px;
+}
+
+.item-l > h4::before {
+  content: counter(item, decimal) ". ";
+  font-weight: bold;
+  color: white;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 50%;
+  background-color: rgb(53, 113, 93);
+  margin-right: 8px;
+}
+
+/* Nested items inside item-l */
+.nested-item {
+  padding-left: 25px;
+  margin-left: 20px;
+  counter-reset: item-1;
+}
+
+.nested-item > h4 {
+  counter-increment: item-1;
+  margin-bottom: 10px;
+}
+
+.nested-item > h4::before {
+  content: counters(item, ".") "." counter(item-1) " ";
+  font-weight: bold;
+  color: white;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 50%;
+  background-color: rgb(53, 113, 93);
+  margin-right: 8px;
+}

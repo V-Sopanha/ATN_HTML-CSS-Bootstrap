@@ -255,7 +255,7 @@
     * Utility function to update the button text and aria-label.
     */
     function updateButton({ buttonEl, isDark }) {
-        const newCta = isDark ? "<i class='fa-solid fa-toggle-on'></i>  Dark Mode" : "<i class='fa-solid fa-toggle-off'></i> Light Mode";
+        const newCta = isDark ? "<i class='fa-solid fa-toggle-on''></i>  Dark Mode" : "<i class='fa-solid fa-toggle-off'></i> Light Mode";
         // use an aria-label if you are omitting text on the button
         // and using a sun/moon icon, for example
         buttonEl.setAttribute("aria-label", newCta);

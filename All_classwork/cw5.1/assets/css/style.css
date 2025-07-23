@@ -131,12 +131,14 @@ header {
     cursor: pointer;
     margin-right: 34px;
     color: var(--color-text);
+    
 }
 
 .profile-header-right .btn-light-dark-mode i {
     font-size: 16px;
     padding-right: 5px;
-    color: black;
+    color: rgb(60, 60, 60);
+    
 }
 
 
