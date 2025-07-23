@@ -3,97 +3,115 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--color-bg);
 }
 
-header{
+header {
     width: 100%;
     background-color: var(--color-card-bg);
 }
+
 .container {
     width: 1200px;
     margin: auto;
 }
+
 .row {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 /* ====================== dark and light mode ================== */
-:root {
+/* :root {
   
-}
+} */
 
 [data-theme="light"] {
     --color-bg: #DAE3E7;
-    --color-card-bg : #ffffff;
-    --color-heading : #696969 ;
+    --color-card-bg: #ffffff;
+    --color-heading: #696969;
     --color-text: #6B6A6A;
+    --color-bg-icon : rgb(170, 170, 170);
 }
 
 [data-theme="dark"] {
     --color-bg: #17191C;
-    --color-card-bg : #1E2124;
-    --color-heading : #d1d1d1 ;
-    --color-text : #9B9D9D;
+    --color-card-bg: #1E2124;
+    --color-heading: #d1d1d1;
+    --color-text: #9B9D9D;
+    --color-bg-icon : rgb(57, 57, 57);
 }
 
 .col-3 {
-  width: 25%;
+    width: 25%;
 }
+
 .col-4 {
-  width: 33.33333333333333%;
+    width: 33.33333333333333%;
 }
+
 .col-6 {
-  width: 50%;
+    width: 50%;
 }
+
 .col-8 {
-  width: 66.66666666666667%;
+    width: 66.66666666666667%;
 }
+
 .col-9 {
-  width: 75% ;
+    width: 75%;
 }
+
 .col-12 {
-  width: 100%;
+    width: 100%;
 }
+
 /* ================ */
-.profile-header{
+.profile-header {
     display: flex;
     align-items: center;
     margin-top: 10px;
     gap: 20px;
 }
+
 .profile-header .profile-img img {
     padding-block: 20px;
     height: 200px;
 }
+
 .profile-header .profile-name ul {
     list-style: none;
     display: flex;
     gap: 10px
 }
-.profile-header .profile-name ul li i{
+
+.profile-header .profile-name ul li i {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: rgb(170, 170, 170);
+    background-color: var(--color-bg-icon);
     align-content: center;
     text-align: center;
     color: #fff;
     margin-top: 10px;
-    
+
 }
-.profile-header .profile-name h1{
+
+.profile-header .profile-name h1 {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 5px;
     color: var(--color-heading);
 }
+
 .profile-header .profile-name span {
     font-size: 20px;
     color: var(--color-text);
 }
+
 .profile-header-right {
     display: flex;
     flex-direction: column;
@@ -114,6 +132,7 @@ header{
     margin-right: 34px;
     color: var(--color-text);
 }
+
 .profile-header-right .btn-light-dark-mode i {
     font-size: 16px;
     padding-right: 5px;
@@ -134,20 +153,23 @@ header{
     border-radius: 8px;
     cursor: pointer;
 }
+
 .profile-header-right .btn-contact a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
 }
+
 .profile-header-right .btn-contact i {
     font-size: 20px;
 }
+
 .profile-header-right .btn-contact:hover {
     background-color: #0a8c0a;
 }
 
 /* =================== about me */
-main{
+main {
     margin-top: 50px;
 }
 
@@ -156,19 +178,23 @@ main{
     padding: 20px;
     border-radius: 10px;
 }
+
 .profile-detail-area .about-me {
     margin-bottom: 30px;
 }
+
 .profile-detail-area .about-me h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color:  var(--color-heading );
+    color: var(--color-heading);
 }
+
 .profile-detail-area .about-me p {
     font-size: 16px;
-    color:  var(--color-text);
+    color: var(--color-text);
     margin-bottom: 20px;
 }
+
 /*  =========== profile-detail-area ============= */
 .profile-detail-area .project-info .latest-project {
     display: flex;
@@ -176,15 +202,18 @@ main{
     align-items: center;
     margin-bottom: 50px;
 }
+
 .profile-detail-area .project-info .latest-project h2 {
     font-size: 24px;
     margin-bottom: 15px;
     color: var(--color-heading);
 }
+
 .profile-detail-area .project-info .latest-project h2:first-child {
     align-self: flex-start;
     text-align: left;
 }
+
 .latest-project-image {
     position: relative;
     width: 100%;
@@ -192,16 +221,18 @@ main{
     overflow: hidden;
     padding: 5px;
 }
+
 .profile-detail-area .project-info img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
     position: relative;
-}  
+}
+
 /* new on top */
-.profile-detail-area .project-info .title  {
-    width: 150px;
+.profile-detail-area .project-info .title {
+    width: 160px;
     height: 50px;
     background-color: #479FC8;
     font-size: 22px;
@@ -215,81 +246,100 @@ main{
     top: 10px;
     z-index: 1;
 }
+
 .profile-detail-area .project-info p {
     font-size: 16px;
     color: var(--color-text);
     margin-bottom: 20px;
-}       
+}
+
 .profile-detail-area .project-info a {
     display: inline-block;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-}   
-.profile-detail-area .project-info .btn-blue{
+}
+
+.profile-detail-area .project-info .btn-blue {
     background-color: #479FC8;
     padding: 10px 20px;
     border-radius: 8px;
 }
-.profile-detail-area .project-info .btn-blue i{
+
+.profile-detail-area .project-info .btn-blue i {
     padding-right: 5px;
     font-size: 18px;
 }
+
 /* ====== project list */
 
 .profile-detail-area .project-info .project-list {
     margin: 30px 0 30px 0;
 }
 
-.profile-detail-area .project-info  .project-list img {
+.profile-detail-area .project-info .project-list img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
-.profile-detail-area .project-info  .project-list .project-content {
+.profile-detail-area .project-info .project-list .project-content {
     margin: 0 0 20px 20px;
 }
-.profile-detail-area .project-info  .project-list .project-content h2 {
+
+.profile-detail-area .project-info .project-list .project-content h2 {
     font-size: 18px;
-    margin-bottom: 15px;   
+    margin-bottom: 15px;
     color: var(--color-heading);
 }
-.profile-detail-area .project-info  .project-list .project-content p {
+
+.profile-detail-area .project-info .project-list .project-content p {
     font-size: 16px;
     color: var(--color-text);
     margin-bottom: 10px;
 }
+
 .profile-detail-area .project-info .project-list .project-content a {
     display: inline-block;
-    color:  #70C18F; 
+    color: #70C18F;
     text-decoration: none;
     font-weight: 500;
 }
+
 .profile-detail-area .project-info .project-list .project-content a i {
     padding-right: 5px;
 }
+
 /* ===========  margin all aside*/
-.profile-detail-area .address,.skill, .testimonial, .education, .language {
+.profile-detail-area .address,
+.skill,
+.testimonial,
+.education,
+.language {
     margin: 0 0 20px 20px;
 }
+
 /* ===== */
 .profile-detail-area .address .card-body ul {
     list-style: none;
     padding: 0;
 }
+
 .profile-detail-area .address .card-body ul li {
     margin-bottom: 10px;
 }
-.profile-detail-area .address .card-body ul li a{
+
+.profile-detail-area .address .card-body ul li a {
     text-decoration: none;
     color: #70C18F;
 }
+
 .profile-detail-area .address .card-body ul li:first-child a {
     color: var(--color-text);
 }
-.profile-detail-area .address .card-body ul li i{
+
+.profile-detail-area .address .card-body ul li i {
     padding-right: 10px;
     color: rgb(208, 208, 208);
 }
@@ -300,13 +350,15 @@ main{
     margin-bottom: 15px;
     color: var(--color-heading);
 }
+
 .profile-detail-area .skill .card-body p {
     font-size: 16px;
-    color: var(--color-text);    
+    color: var(--color-text);
     margin-bottom: 20px;
 }
+
 .profile-detail-area .skill .card-body ul {
-    list-style: none;  
+    list-style: none;
     padding: 0;
 }
 
@@ -317,14 +369,16 @@ main{
     margin-bottom: 8px;
 }
 
-.profile-detail-area .skill .card-body .skill-row  h4 {
+.profile-detail-area .skill .card-body .skill-row h4 {
     font-size: 14px;
     color: var(--color-text);
 }
+
 .profile-detail-area .skill .card-body .skill-row span {
     font-size: 12px;
     color: var(--color-text);
 }
+
 .profile-detail-area .skill .card-body .skill-row i {
     color: var(--color-text);
     font-size: 10px;
@@ -357,32 +411,38 @@ main{
 .profile-detail-area .skill .skill-bar .skill-value.python {
     width: 90%;
 }
+
 .profile-detail-area .skill .skill-bar .skill-value.js {
     width: 95%;
 }
+
 .profile-detail-area .skill .skill-bar .skill-value.html {
     width: 90%;
 }
+
 .profile-detail-area .skill .skill-bar .skill-value.ruby {
     width: 70%;
 }
 
 .profile-detail-area .skill .card-body a {
     display: inline-block;
-    color:  #70C18F; 
+    color: #70C18F;
     text-decoration: none;
     font-weight: 500;
 }
+
 .profile-detail-area .skill .card-body a i {
     padding: 15px 5px 15px 0;
     font-size: 18px;
 }
+
 /* ====== testimonails */
 .profile-detail-area .testimonial h2 {
     font-size: 24px;
     margin-bottom: 15px;
     color: var(--color-heading);
 }
+
 .profile-detail-area .testimonial-item p {
     font-size: 16px;
     color: var(--color-text);
@@ -390,12 +450,14 @@ main{
     margin-bottom: 10px;
     border-left: #56da56 5px solid;
 }
+
 .profile-detail-area .testimonial-item h4 {
     padding-left: 15px;
     font-size: 18px;
     color: var(--color-heading);
     margin-bottom: 5px;
 }
+
 .profile-detail-area .testimonial-item span {
     padding-left: 15px;
     font-size: 14px;
@@ -404,68 +466,82 @@ main{
 
 .profile-detail-area .testimonial .card-body a {
     display: inline-block;
-    color:  #70C18F; 
+    color: #70C18F;
     text-decoration: none;
     font-weight: 500;
 }
+
 .profile-detail-area .testimonial .card-body a i {
     padding: 15px 5px 15px 0;
     font-size: 18px;
 }
+
 /* ========= education */
 .profile-detail-area .education h2 {
     font-size: 20px;
-    margin : 10px 0 28px 0;
+    margin: 10px 0 28px 0;
     color: var(--color-heading);
-}   
+}
+
 .profile-detail-area .education .card-body ul {
     list-style: none;
     padding: 0;
 }
+
 .profile-detail-area .education .card-body ul li {
     margin-bottom: 24px;
 }
+
 .profile-detail-area .education .card-body ul li h4 {
     font-size: 14px;
     color: var(--color-heading);
     margin-bottom: 5px;
 }
+
 .profile-detail-area .education .card-body ul li span {
-    padding-left: 22px ;
+    padding-left: 22px;
     font-size: 14px;
     color: var(--color-text);
     margin-bottom: 5px;
 }
+
 /* ========== language */
 .profile-detail-area .language .card-body ul {
     list-style: none;
     padding: 0;
 }
+
 .profile-detail-area .language .card-body ul li {
     margin-bottom: 24px;
 }
+
 .profile-detail-area .language h2 {
     font-size: 20px;
-    margin : 10px 0 28px 0;
+    margin: 10px 0 28px 0;
     color: var(--color-heading);
 }
-.profile-detail-area .language h4{
+
+.profile-detail-area .language h4 {
     color: var(--color-heading)
 }
+
 .profile-detail-area .language span {
     font-size: 14px;
     color: var(--color-text);
 
 }
+
 .profile-detail-area .language span i {
     color: #21c460;
     padding-right: 2px;
 }
+
 /* ============ foooter */
 footer {
     background-color: var(--color-card-bg);
     margin-top: 70px;
 }
+
 footer .footer {
     padding: 20px 0;
     text-align: center;
