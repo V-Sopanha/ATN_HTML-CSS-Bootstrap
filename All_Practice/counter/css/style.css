@@ -5,16 +5,95 @@
 }
 
 
-
 .item-list {
-padding-left: 25px;
-  counter-reset: item;
+    padding-left: 25px;
+    margin-left: 50px;
+    counter-reset: list;
 }
 .item-list > h4 {
-  counter-increment: item;
+    counter-increment: list;
+}
+.item-list > h4::before{
+  content: counter(list, upper-roman) ". ";
 }
 .item-list > h4::after {
-  content: " " counter(item) "";
+    content: counters(list, ".") " ";
+    font-weight: bold;
+    color: black;
+}
+
+.list-1 {
+    padding-left: 25px;
+    counter-reset: item-1;
+    margin-left: 20px;
+}
+.list-1 > h4 {
+    counter-increment: item-1;
+    color: rgb(53, 113, 93);
+}
+.list-1 > h4::before {
+  content: counter(list, lower-alpha) ". " ;
+  font-weight: bold;
+}
+.list-1 > h4::after {
+    content:" " counters(list, ".") "." counter(item-1) " ";
+    color: teal;
+    font-weight: bold;
+}
+
+.list-2 {
+    padding-left: 25px;
+    counter-reset: item-2;
+    margin-left: 40px;
+}
+.list-2 > h4 {
+    counter-increment: item-2;
+    color: purple;
+}
+.list-2 > h4::before{
+  content: counter(list, circle) " ";
+}
+.list-2 > h4::after {
+    content:" " counters(list, ".") "." counter(item-1) "." counter(item-2) " ";
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+.list-3 {
+    counter-reset: item-3;
+    padding-left: 25px;
+    margin-left: 60px;
+}
+.list-3 > h4 {
+    counter-increment: item-3;
+}
+.list-3 > h4::before{
+  content: counter(list, disc) " ";
+}
+.list-3 > h4::after {
+    content: counters(list, ".") "." counter(item-1) "." counter(item-2) "." counter(item-3) " ";
+    color: orangered;
+    font-weight: bold;
+}
+/* ...existing code... */
+
+
+/* .item-list {
+padding-left: 25px;
+  counter-reset: list;
+}
+.item-list > h4 {
+  counter-increment: list;
+}
+
+.item-list > h4::before{
+  content: counter(list, upper-roman) ". ";
+  font-weight: bold;
+  color: black;
+}
+
+.item-list > h4::after {
+  content: " " counter(list) "";
   font-weight: bold;
   color: black;
 }
@@ -27,13 +106,17 @@ padding-left: 25px;
 .list-1 > h4 {
   counter-increment: subitem;
 }
+.item-list > h4::before{
+  content: " "
+}
+
 .list-1 > h4::after {
-  /* content: " " counter(item) "." counter(subitem); */
+  content: " " counte(list) "." counter(subitem);
   color: teal;
 }
 
 .list-2 {
-    padding-left: 25px;
+  padding-left: 25px;
   counter-reset: subsubitem;
   margin-left: 40px;
 }
@@ -41,7 +124,7 @@ padding-left: 25px;
   counter-increment: subsubitem;
 }
 .list-2 > h4::after {
-  content: " " counter(item) "." counter(subitem) "." counter(subsubitem);
+  content: " " counter(list) "." counter(subitem) "." counter(subsubitem);
   color: rebeccapurple;
 }
 
@@ -54,9 +137,9 @@ padding-left: 25px;
   counter-increment: subsubsubitem;
 }
 .list-3 > h4::after {
-  content: " " counter(item) "." counter(subitem) "." counter(subsubitem) "." counter(subsubsubitem);
+  content: " " counter(list) "." counter(subitem) "." counter(subsubitem) "." counter(subsubsubitem);
   color: orangered;
-}
+} */
 
 /* Remove ::before rules for h4
 .item-list > h4::before,
@@ -109,3 +192,5 @@ padding-left: 25px;
   color: orangered;
 }
  */
+
+
