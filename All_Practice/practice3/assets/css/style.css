@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ================================================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(44, 62, 80);
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-brand a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.navbar .navbar-brand a:hover {
+    transform: scale(1.05);
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    padding: 8px 0;
+}
+
+.navbar .navbar-nav .navbar-item .navbar-link {
+    color: #fff;
+    padding-block: 20px;
+    display: block;
+    font-weight: bold;
+    transition: color 0.15s ease-in-out;
+}
+
+.navbar .navbar-nav .navbar-item:hover .navbar-link {
+    color: #1abc9c;
+}
+
+/* ================================================= */
+
+section {
+    padding: 90px 0;
+}
+
+.section-title h2 {
+    font-size: 48px;
+    text-align: center;
+    margin: 0 0 8px;
+    color: #2c3b50;
+}
+
+.section-title.light h2 {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -15px;
+    justify-content: center;
+}
+
+.col-4 {
+    margin-bottom: 30px;
+    padding-inline: 15px;
+    width: calc(100% / 3);
+}
+
+.col-8 {
+    margin: auto;
+    width: calc(100% * 7 / 12);
+}
+
+.divider-custom {
+    width: 270px;
+    margin: auto;
+    padding: 0 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.divider-custom.dark .divider-icon i {
+    color: #2c3b50;
+}
+
+.divider-custom.dark .divider-line {
+    background-color: #2c3b50;
+}
+
+.divider-custom .divider-icon i {
+    font-size: 36px;
+    color: #fff;
+}
+
+.divider-custom .divider-line {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100px;
+    height: 4px;
+}
+
+/* ================================================= */
+
+.hero-area {
+    background-color: #1abc9c;
+}
+
+.hero-area .hero-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.hero-area .hero-main .hero-profile img {
+    height: 260px;
+    margin: auto;
+}
+
+.hero-area .hero-main .hero-title h1 {
+    font-size: 64px;
+    color: #fff;
+}
+
+.hero-area .hero-main .hero-caption p {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* ================================================= */
+
+.portfolio-area .box .img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 8px;
+    background-color: #1abc9cdc;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.portfolio-area .box:hover .img-overlay {
+    opacity: 1;
+}
+
+.portfolio-area .box img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* ================================================= */
+
+.about-area {
+    background-color: #1abc9c;
+}
+
+.about-area .about-content {
+    width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.about-area .about-download {
+    display: flex;
+    justify-content: center;
+}
+
+.about-area .about-download a {
+    color: #fff;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1.5px solid #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.about-area .about-download a span {
+    margin-left: 10px;
+}
+
+.about-area .about-download a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ================================================= */
+
+
+.contact-area .contact-form .field-holder {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.contact-area .contact-form .field-holder .form-control {
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.contact-area .contact-form .field-holder label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(80, 80, 80);
+    display: flex;
+    align-items: center;
+    cursor: text;
+}
+
+.contact-area .contact-form .field-holder .form-control,
+.contact-area .contact-form .field-holder label {
+    height: 60px;
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.contact-area .contact-form .field-holder:nth-child(4) .form-control {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact-area .contact-form .field-holder:nth-child(4) .form-control:focus+label {
+    top: -50px;
+}
+
+.contact-area .contact-form .field-holder .form-control:focus {
+    border-bottom: 2px solid #158f76;
+}
+
+.contact-area .contact-form .field-holder .form-control:focus+label {
+    font-size: 1rem;
+    top: -30px;
+}
+
+.contact-form .ctb {
+    display: block;
+    padding: 18px 36px;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-form .ctb:hover {
+    background-color: #158f76;
+}
+
+/* ================================================= */
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 80px 0 50px;
+}
+
+.footer-box {
+    text-align: center;
+    height: 150px;
+    padding: 0 30px;
+}
+
+.footer-box h4 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.footer-box p {
+    font-size: 20px;
+}
+
+.footer-box.middle ul {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer-box.middle ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-content: center;
+    border: 2px solid #fff;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.footer-box.middle ul li:hover a {
+    background-color: #fff;
+    color: #000;
+}
+
+.footer-box.right p a {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
+.footer-box.right p a:hover {
+    color: #158f76;
+}
+
+.copyright {
+    text-align: center;
+    padding: 24px 0;
+    background-color: #1a252f;
+    color: #fff;
+}
