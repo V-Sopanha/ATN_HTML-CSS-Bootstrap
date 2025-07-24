@@ -14,8 +14,7 @@ input{
     height: 35px;
     border: 1px solid #ddd;
     padding-left: 13px;
-    transition: all 1s; /* Simplified transition */
-    /* Remove transition-delay for instant effect */
+    transition: all 1s; /
 }
 
 
@@ -32,14 +31,14 @@ input:focus{
     border: 2px solid blue;
     margin-top: 50px;
     transition-duration: 3s;
-    transition-timing-function: ease-out;
+    transition-timing-function: linear;
 
 }
 .item{
     width: 100px;
     height: 50px;
     background-color: blue;
-    transition: margin-left 3s ease-out; /* Add transition for movement */
+    transition: margin-left 3s linear; /* Add transition for movement */
 }
 
 .wrapper:hover .item{
