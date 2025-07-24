@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    margin: 50px auto;
+}
+
+input{
+    width: 400px;
+    height: 35px;
+    border: 1px solid #ddd;
+    padding-left: 13px;
+    transition: all 1s; /* Simplified transition */
+    /* Remove transition-delay for instant effect */
+}
+
+
+input:focus{
+    outline-color: green;
+    width: 700px;
+    height: 100px;
+    background-color: lawngreen;
+}
+
+.wrapper{
+    width: 1200px;
+    height: 400px;
+    border: 2px solid blue;
+    margin-top: 50px;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+
+}
+.item{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    transition: margin-left 3s ease-out; /* Add transition for movement */
+}
+
+.wrapper:hover .item{
+    margin-left: calc(100% - 100px);
+}
