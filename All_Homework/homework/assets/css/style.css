@@ -305,6 +305,13 @@ p {
     }
     .row{
         justify-content: center;
+        /* gap: 30px; */
+    }
+    .team-area .col-4{
+        width: 100%;
+    }
+    .logo-area .logo-img img{
+        width: 80%;
     }
 }
 @media (max-width :600px ){
@@ -317,6 +324,24 @@ p {
     .navbar .navbar-nav .nav-item{
         display: none;
     }
-    
-    
+
+    .col-3{
+        width: calc(100%/1 );
+    }  
+    .logo-img{
+        display: block;
+        margin: auto;
+    }
+    footer .row{
+        display: block;
+        /* margin: auto; */
+    }
+    .footer-left, .footer-center, .footer-right{
+        width: 100%;
+        /* background-color: #0700b8; */
+        /* margin: auto; */
+        display: flex;
+        justify-content: center;
+        
+    }
 }
