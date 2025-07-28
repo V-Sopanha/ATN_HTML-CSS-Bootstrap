@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Animation Preview</title>
+    <style>
+        /* Universal box-sizing for consistent layout */
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main container for the page content */
+        .container{
+            width: 1200px; /* Fixed width for the container */
+            margin: 50px auto; /* Center the container on the page with top/bottom margin */
+            border: 1px dashed #ccc; /* Added for visual clarity of the container area */
+            padding: 20px; /* Added padding to container */
+        }
+
+        /* Styling for the search input field */
+        input{
+            width: 400px; /* Initial width */
+            height: 35px; /* Fixed height */
+            border: 1px solid #ddd; /* Light grey border */
+            padding-left: 13px; /* Padding inside the input */
+            transition: all 1s; /* Smooth transition for all properties over 1 second */
+            border-radius: 5px; /* Rounded corners for input */
+        }
+
+        /* Styling for the input field when it's focused */
+        input:focus{
+            outline-color: green; /* Green outline when focused */
+            width: 700px; /* Expands width */
+            height: 100px; /* Expands height */
+            background-color: lawngreen; /* Changes background color */
+        }
+
+        /* Wrapper for the animated item */
+        .wrapper{
+            width: 1200px; /* Fixed width */
+            height: 400px; /* Fixed height */
+            border: 2px solid blue; /* Blue border */
+            margin-top: 50px; /* Margin from the element above */
+            position: relative; /* Essential for positioning the child .item absolutely */
+            overflow: hidden; /* Hides any content that goes outside the wrapper's bounds */
+            border-radius: 10px; /* Rounded corners for wrapper */
+        }
+
+        /* The item that will be animated */
+        .item{
+            width: 100px; /* Fixed width */
+            height: 50px; /* Fixed height */
+            background-color: blue; /* Blue background */
+            position: absolute; /* Allows precise positioning within its relative parent (.wrapper) */
+            top: 0; /* Initial position: top edge */
+            left: 0; /* Initial position: left edge */
+            border-radius: 5px; /* Rounded corners for item */
+        }
+
+        /* Apply the animation to .item when the .container is hovered */
+        .container:hover .item {
+            /* Apply the 'moveSquare' animation:
+               - 8s: duration of one cycle
+               - linear: constant speed
+               - infinite: loops continuously
+            */
+            animation: moveSquare 8s linear infinite;
+        }
+
+        /* Keyframes for the 'moveSquare' animation, defining the square path */
+        @keyframes moveSquare {
+            0% {
+                top: 0;
+                left: 0; /* Start: Top-left corner */
+            }
+            25% {
+                top: 0;
+                left: calc(100% - 100px); /* Move to Top-right corner (100% wrapper width - item width) */
+            }
+            50% {
+                top: calc(100% - 50px); /* Move to Bottom-right corner (100% wrapper height - item height) */
+                left: calc(100% - 100px); /* Stay at right edge */
+            }
+            75% {
+                top: calc(100% - 50px); /* Stay at bottom edge */
+                left: 0; /* Move to Bottom-left corner */
+            }
+            100% {
+                top: 0;
+                left: 0; /* Return to Top-left corner, completing the loop */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>CSS Transition Animation</h2>
+        <br><hr><br>
+
+        <form action="">
+            <input type="search" placeholder="Search here...">
+        </form>
+
+        <div class="wrapper">
+            <div class="item">
+                <!-- This is the animated box -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
