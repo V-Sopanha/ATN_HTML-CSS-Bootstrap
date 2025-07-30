@@ -94,11 +94,9 @@ body {
     left: 0;
     transition: all 0.3s ease-in-out;
 }
-
 .navbar .navbar-nav .nav-item .nav-link:hover::after {
     width: 100%;
 }
-
 /* Dropdown Menu */
 .navbar .navbar-nav .dropdown {
     position: relative;
@@ -109,10 +107,10 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 220px;
+    width: 180px;
     border: 1px solid #ddd;
     background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
@@ -127,15 +125,15 @@ body {
 
 .navbar .navbar-nav .dropdown .dropdown-menu li a {
     display: block;
-    padding: 15px 20px;
-    border-bottom: 1px solid #ddd;
+    padding: 0px 10px;
+    /* border-bottom: 1px solid #ddd; */
     color: #333;
     transition: 0.3s;
 }
 
 .navbar .navbar-nav .dropdown .dropdown-menu li:hover a {
-    background-color: #2b7fff;
-    color: #fff;
+    /* background-color: #2b7fff; */
+    color: goldenrod;
     padding-left: 25px;
 }
 
@@ -154,7 +152,6 @@ body {
     width: 220px;
     border: 1px solid #ddd;
     background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     left: 100%;
     top: 0;
     opacity: 0;
@@ -170,14 +167,14 @@ body {
 }
 
 .navbar .navbar-nav .dropdown-menu .dropdown .sub-dropdown-menu li a {
-    padding: 15px 20px;
+    padding: 0px 10px;
     background-color: transparent;
     color: #333;
 }
 
 .navbar .navbar-nav .dropdown-menu .dropdown .sub-dropdown-menu li:hover a {
-    background-color: #2b7fff;
-    color: #fff;
+    /* background-color: #2b7fff; */
+    color: goldenrod;
     padding-left: 25px;
 }
 
@@ -235,12 +232,18 @@ main {
     justify-content: center;
     height: 100%;
 }
+.hero-banner .hero-info .text{
+    max-width: 800px;
+    text-align: center;
+}
+
 
 .hero-banner .hero-info .text h1 {
     color: white;
     font-size: 50px;
     margin-bottom: 1.5rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .hero-banner .hero-info .text h1::after {
@@ -253,8 +256,8 @@ main {
 }
 
 .hero-banner .hero-info .text p {
-    color: white;
-    font-size: 1.2rem;
+    color: rgb(211, 211, 211);
+    font-size: 18px;
     line-height: 1.8;
     margin-bottom: 2rem;
 }
@@ -277,32 +280,46 @@ main {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 0 20px;
+
+
+@media (min-width: 1200px ) {
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px ) 
+{
+
+    .navbar .navbar-nav .nav-item{
+        display: none;
     }
 
-    .hero-banner .hero-info .text h1 {
-        font-size: 2rem;
+    .navbar-toggle {
+        padding: 8px 16px;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: block;
+    }
+    .navbar-toggle i{
+        color: white;
+        font-size: 20px;
     }
 
+}
+@media (max-width : 820px ){
+.navbar  {
+    padding: 0 0;
+    }
     .hero-banner .hero-info .text p {
-        font-size: 1rem;
-    }
+    width: 400px;
+}
 
-    .navbar .navbar-nav {
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        width: 250px;
-        height: 100vh;
-        transition: right 0.3s ease;
-        padding-top: 60px;
-    }
 
-    .navbar .navbar-nav .nav-item {
-        padding: 10px 20px;
-    }
+}
+@media (max-width :600px ){
+ 
 }
