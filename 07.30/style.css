@@ -1,0 +1,16 @@
+.box {
+    width: 100%;
+    height: 150px;
+}
+
+.box.small {
+    height: 100px;
+}
+
+.box.large {
+    height: 250px;
+}
+
+.box.expand {
+    height: calc(350px + 1.5rem);
+}
