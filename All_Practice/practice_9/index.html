@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-navbar">
+                <div class="nav-logo">
+                    <a href="#">UpConstruction<span>.</span></a>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">BLOG</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">DROPDOWN <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link">dropdown 01 <i class="fa-solid fa-chevron-right"></i></a>
+                                <ul class="sub-dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Deep Dropdown</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">dropdown 02</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">dropdown 03</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">dropdown 04</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home 02</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home 03</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home 04</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/image/hero-carousel/hero-carousel-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/image/hero-carousel/hero-carousel-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/image/hero-carousel/hero-carousel-3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/image/hero-carousel/hero-carousel-4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assets/image/hero-carousel/hero-carousel-5.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="hero-banner">
+            <div class="hero-info">
+                <div class="text">
+                    <h1>Welcome To UpConstruction</h1>
+                    <p>Loreeuaerat id, ratione sequi eaque corrupti magni quis deleniti ut adipisci dolorem. Numquam quae aspernatur porro mollitia nostrum velit quasi aperiam fuga doloremque aut debitis impedit non, illum at maxime, enim voluptatibus atque nam veniam.</p>
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
