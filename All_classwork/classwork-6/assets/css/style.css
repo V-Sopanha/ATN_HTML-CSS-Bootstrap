@@ -1,0 +1,8 @@
+.man-cate a, .woman-cate a{
+    text-decoration: none;
+    color: white;
+}
+.card{
+    width: 100%;
+    height: 200px;
+}
