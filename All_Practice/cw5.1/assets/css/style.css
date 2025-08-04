@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #DAE3E7;
@@ -14,56 +15,100 @@ body {
     width: 1200px;
     margin: auto;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
 }
+
 [class^="col-"] {
     /* Responsive columns */
 }
-.col-1 { width: 8.3333%; }
-.col-2 { width: 16.6667%; }
-.col-3 { width: 25%; }
-.col-4 { width: 33.3333%; }
-.col-5 { width: 41.6667%; }
-.col-6 { width: 50%; }
-.col-7 { width: 58.3333%; }
-.col-8 { width: 66.6667%; }
-.col-9 { width: 75%; }
-.col-10 { width: 83.3333%; }
-.col-11 { width: 91.6667%; }
-.col-12 { width: 100%; }
+
+.col-1 {
+    width: 8.3333%;
+}
+
+.col-2 {
+    width: 16.6667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.3333%;
+}
+
+.col-5 {
+    width: 41.6667%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.3333%;
+}
+
+.col-8 {
+    width: 66.6667%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.3333%;
+}
+
+.col-11 {
+    width: 91.6667%;
+}
+
+.col-12 {
+    width: 100%;
+}
 
 /* ================== Header ================== */
 header {
     width: 100%;
     background-color: white;
 }
+
 .profile-header {
     display: flex;
     align-items: center;
     margin-top: 10px;
     gap: 20px;
 }
+
 .profile-header .profile-img img {
     padding-block: 20px;
     height: 200px;
 }
+
 .profile-header .profile-name h1 {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 5px;
     color: #484848;
 }
+
 .profile-header .profile-name span {
     font-size: 20px;
     color: #484848;
 }
+
 .profile-header .profile-name ul {
     list-style: none;
     display: flex;
     gap: 10px;
 }
+
 .profile-header .profile-name ul li i {
     width: 30px;
     height: 30px;
@@ -74,6 +119,7 @@ header {
     color: #fff;
     margin-top: 10px;
 }
+
 .profile-header-right {
     display: flex;
     flex-direction: column;
@@ -82,6 +128,7 @@ header {
     gap: 15px;
     height: 100%;
 }
+
 .profile-header-right .btn-light-dark-mode {
     border: none;
     background: none;
@@ -92,11 +139,13 @@ header {
     cursor: pointer;
     margin-right: 34px;
 }
+
 .profile-header-right .btn-light-dark-mode i {
     font-size: 16px;
     padding-right: 5px;
     color: #484848;
 }
+
 .profile-header-right .btn-contact {
     display: flex;
     align-items: center;
@@ -110,14 +159,17 @@ header {
     border-radius: 8px;
     cursor: pointer;
 }
+
 .profile-header-right .btn-contact a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
 }
+
 .profile-header-right .btn-contact:hover {
     background-color: #0a8c0a;
 }
+
 .profile-header-right .btn-contact i {
     font-size: 20px;
 }
@@ -138,11 +190,13 @@ main {
 .profile-detail-area .about-me {
     margin-bottom: 30px;
 }
+
 .profile-detail-area .about-me h2 {
     font-size: 24px;
     margin-bottom: 15px;
     color: #484848;
 }
+
 .profile-detail-area .about-me p {
     font-size: 16px;
     color: #666;
@@ -156,6 +210,7 @@ main {
     align-items: center;
     margin-bottom: 50px;
 }
+
 .profile-detail-area .project-info .latest-project h2 {
     font-size: 24px;
     margin-bottom: 15px;
@@ -163,12 +218,14 @@ main {
     align-self: flex-start;
     text-align: left;
 }
+
 .latest-project-image {
     position: relative;
     width: 100%;
     margin-bottom: 15px;
     overflow: hidden;
 }
+
 .latest-project-image img {
     width: 100%;
     height: auto;
@@ -176,6 +233,7 @@ main {
     display: block;
     padding: 5px;
 }
+
 .latest-project-image .title,
 .profile-detail-area .project-info .title {
     width: 150px;
@@ -192,6 +250,7 @@ main {
     top: 10px;
     z-index: 2;
 }
+
 .profile-detail-area .project-info img {
     width: 100%;
     height: auto;
@@ -199,22 +258,26 @@ main {
     margin-bottom: 15px;
     position: relative;
 }
+
 .profile-detail-area .project-info p {
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
 }
+
 .profile-detail-area .project-info a {
     display: inline-block;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
 }
+
 .profile-detail-area .project-info .btn-blue {
     background-color: #479FC8;
     padding: 10px 20px;
     border-radius: 8px;
 }
+
 .profile-detail-area .project-info .btn-blue i {
     padding-right: 5px;
     font-size: 18px;
@@ -224,25 +287,30 @@ main {
 .profile-detail-area .project-info .project-list {
     margin: 30px 0;
 }
+
 .profile-detail-area .project-info .project-list img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
 }
+
 .profile-detail-area .project-info .project-list .project-content {
     margin: 0 0 20px 20px;
 }
+
 .profile-detail-area .project-info .project-list .project-content h2 {
     font-size: 18px;
     margin-bottom: 15px;
     color: #484848;
 }
+
 .profile-detail-area .project-info .project-list .project-content p {
     font-size: 16px;
     color: #666;
     margin-bottom: 10px;
 }
+
 .profile-detail-area .project-info .project-list .project-content a {
     display: inline-block;
     color: #70C18F;
@@ -264,16 +332,20 @@ main {
     list-style: none;
     padding: 0;
 }
+
 .profile-detail-area .address .card-body ul li {
     margin-bottom: 10px;
 }
+
 .profile-detail-area .address .card-body ul li a {
     text-decoration: none;
     color: #70C18F;
 }
+
 .profile-detail-area .address .card-body ul li:first-child a {
     color: #666;
 }
+
 .profile-detail-area .address .card-body ul li i {
     padding-right: 10px;
     color: rgb(208, 208, 208);
@@ -285,29 +357,35 @@ main {
     margin-bottom: 15px;
     color: #484848;
 }
+
 .profile-detail-area .skill .card-body p {
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
 }
+
 .profile-detail-area .skill .card-body ul {
     list-style: none;
     padding: 0;
 }
+
 .profile-detail-area .skill .card-body .skill-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 8px;
 }
+
 .profile-detail-area .skill .card-body .skill-row h4 {
     font-size: 14px;
     color: #484848;
 }
+
 .profile-detail-area .skill .card-body .skill-row span {
     font-size: 12px;
     color: #666;
 }
+
 .profile-detail-area .skill .card-body .skill-row i {
     color: #fff;
     font-size: 10px;
@@ -319,6 +397,7 @@ main {
     align-items: center;
     justify-content: center;
 }
+
 .profile-detail-area .skill .card-body .skill-bar {
     width: 100%;
     height: 15px;
@@ -328,22 +407,37 @@ main {
     margin-bottom: 30px;
     overflow: hidden;
 }
+
 .profile-detail-area .skill .card-body .skill-bar .skill-value {
     height: 100%;
     border-radius: 50px;
     background-color: #21c460;
     position: absolute;
 }
-.profile-detail-area .skill .skill-bar .skill-value.python { width: 90%; }
-.profile-detail-area .skill .skill-bar .skill-value.js { width: 95%; }
-.profile-detail-area .skill .skill-bar .skill-value.html { width: 90%; }
-.profile-detail-area .skill .skill-bar .skill-value.ruby { width: 70%; }
+
+.profile-detail-area .skill .skill-bar .skill-value.python {
+    width: 90%;
+}
+
+.profile-detail-area .skill .skill-bar .skill-value.js {
+    width: 95%;
+}
+
+.profile-detail-area .skill .skill-bar .skill-value.html {
+    width: 90%;
+}
+
+.profile-detail-area .skill .skill-bar .skill-value.ruby {
+    width: 70%;
+}
+
 .profile-detail-area .skill .card-body a {
     display: inline-block;
     color: #70C18F;
     text-decoration: none;
     font-weight: 500;
 }
+
 .profile-detail-area .skill .card-body a i {
     padding: 15px 0 15px 5px;
     font-size: 18px;
@@ -355,11 +449,13 @@ main {
     margin-bottom: 15px;
     color: #484848;
 }
+
 .profile-detail-area .testimonial-item {
     background-color: #fff;
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
 .profile-detail-area .testimonial-item p {
     font-size: 16px;
     color: #666;
@@ -367,23 +463,27 @@ main {
     margin-bottom: 10px;
     border-left: #56da56 5px solid;
 }
+
 .profile-detail-area .testimonial-item h4 {
     padding-left: 15px;
     font-size: 18px;
     color: #868686;
     margin-bottom: 5px;
 }
+
 .profile-detail-area .testimonial-item span {
     padding-left: 15px;
     font-size: 14px;
     color: #666;
 }
+
 .profile-detail-area .testimonial .card-body a {
     display: inline-block;
     color: #70C18F;
     text-decoration: none;
     font-weight: 500;
 }
+
 .profile-detail-area .testimonial .card-body a i {
     padding: 15px 0 15px 5px;
     font-size: 18px;
@@ -395,18 +495,22 @@ main {
     margin: 10px 0 28px 0;
     color: #616161;
 }
+
 .profile-detail-area .education .card-body ul {
     list-style: none;
     padding: 0;
 }
+
 .profile-detail-area .education .card-body ul li {
     margin-bottom: 24px;
 }
+
 .profile-detail-area .education .card-body ul li h4 {
     font-size: 14px;
     color: #616161;
     margin-bottom: 5px;
 }
+
 .profile-detail-area .education .card-body ul li span {
     padding-left: 22px;
     font-size: 14px;
@@ -419,18 +523,22 @@ main {
     list-style: none;
     padding: 0;
 }
+
 .profile-detail-area .language .card-body ul li {
     margin-bottom: 24px;
 }
+
 .profile-detail-area .language h2 {
     font-size: 20px;
     margin: 10px 0 28px 0;
     color: #616161;
 }
+
 .profile-detail-area .language span {
     font-size: 14px;
     color: #616161;
 }
+
 .profile-detail-area .language span i {
     color: #21c460;
     padding-right: 2px;
@@ -441,6 +549,7 @@ footer {
     background-color: rgb(75, 75, 75);
     margin-top: 70px;
 }
+
 footer .footer {
     padding: 20px 0;
     text-align: center;
