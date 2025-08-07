@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-top{
+    background-color: #F8F8F8;
+}
+.top-bar-item{
+    font-size: 14px;
+}
+
+
+.nav-bot{
+    color : white;
+}
+.swiper{
+    width: 250px;
+    height: 20px;
+    /* background-color: aqua; */
+}
