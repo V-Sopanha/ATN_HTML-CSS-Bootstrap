@@ -12,13 +12,15 @@ body{
 .top-bar-item{
     font-size: 14px;
 }
-
-
-.nav-bot{
-    color : white;
-}
 .swiper{
     width: 250px;
     height: 20px;
     /* background-color: aqua; */
+}
+.nav-bot{
+    background-color: rgb(44, 44, 44);
+    height: 45px;
+}
+.nav-bot .nav-item .nav-link{
+    color: rgb(171, 171, 171);
 }
