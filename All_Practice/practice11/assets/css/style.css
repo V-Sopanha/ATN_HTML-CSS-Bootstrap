@@ -24,3 +24,7 @@ body{
 .nav-bot .nav-item .nav-link{
     color: rgb(171, 171, 171);
 }
+.badge{
+    background-color: black;
+    color: black;
+}
