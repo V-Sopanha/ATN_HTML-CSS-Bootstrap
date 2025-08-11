@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice11 </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="sticky-top top-0">
+        <div class="top-bar py-2">
+            <div class="container-fluid container-xl">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 d-none d-lg-flex">
+                        <div class="top-bar-item">
+                            <i class="fa-solid fa-phone me-2"></i>
+                            <span>Need help? Call us: </span>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 text-center">
+                        <div class="announcement">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">🎁 20% off on your first order</div>
+                                    <div class="swiper-slide">🚚 Free shipping on orders over $50</div>
+                                    <div class="swiper-slide">💰 30 days money back guarantee.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <div class="d-flex justify-content-end">
+                            <div class="top-bar-item dropdown me-3">
+                                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                    <i class="bi bi-translate me-1"></i>
+                                    EN
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item">
+                                            <i class="fa-solid fa-check me-2"></i>
+                                            <span>English</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Espanol</a></li>
+                                    <li><a href="#" class="dropdown-item">Francais</a></li>
+                                    <li><a href="#" class="dropdown-item">Deutsch</a></li>
+                                </ul>
+                            </div>
+                            <div class="top-bar-item dropdown">
+                                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                    <i class="bi bi-currency-dollar"></i>
+                                    USD
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item">
+                                            <i class="fa-solid fa-check me-2"></i>
+                                            <span>USD</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">EUR</a></li>
+                                    <li><a href="#" class="dropdown-item">GBP</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-bar">
+            <div class="container-fluid container-xl">
+                <div class="d-flex py-3 align-items-center justify-content-between">
+                    <a href="#" class="brand">
+                        <h1>NiceShop</h1>
+                    </a>
+                    <form class="search-form d-none d-xl-block">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for products">
+                            <button class="btn" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="main-bar-action">
+                        <button class="action-btn d-xl-none text-black" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mobileSearch" aria-expanded="false" aria-controls="mobileSearch">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <div class="account-profile">
+                            <div class="action-btn" data-bs-toggle="dropdown">
+                                <i class="bi bi-person"></i>
+                            </div>
+                        </div>
+                        <a href="#" class="action-btn d-none d-md-block">
+                            <i class="bi bi-heart text-black"></i>
+                        </a>
+                        <a href="#" class="action-btn">
+                            <i class="bi bi-cart text-black"></i>
+                        </a>
+                        <button class="btn d-xl-none d-block" data-bs-target="#mobileMenu" data-bs-toggle="modal">
+                            <i class="mobile-nav-toggle text-black  bi me-0 bi-list"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-black navbar-dark d-xl-block d-none">
+            <div class="container-fluid container-xl">
+                <ul class="navbar-nav mb-2 mb-lg-0 w-100">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Product Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Checkout</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link l" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item l d-flex justify-content-between" href="#"
+                                    data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                    Deep Dropdown
+                                    <i class="bi bi-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Deep Dropdown 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Deep Dropdown 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Deep Dropdown 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Deep Dropdown 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Deep Dropdown 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-auto">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="collapse" id="mobileSearch">
+            <div class="container">
+                <form class="search-form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <button class="btn" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="modal fade" id="mobileMenu" data-bs-backdrop="static" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <ul class="navbar-nav mb-2 mb-lg-0 w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Checkout</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link l" href="#" role="button" data-bs-toggle="dropdown"
+                                data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                Dropdown
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item l d-flex justify-content-between" href="#"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                        Deep Dropdown
+                                        <i class="bi bi-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Deep Dropdown 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Deep Dropdown 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Deep Dropdown 3</a></li>
+                                        <li><a class="dropdown-item" href="#">Deep Dropdown 4</a></li>
+                                        <li><a class="dropdown-item" href="#">Deep Dropdown 5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-xl-auto">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <h1 class="hero-title">Discover Amazing Products</h1>
+                            <p class="hero-description">
+                                Explore our curated collection of premium items designed to enhance your lifestyle. From
+                                fashion to tech, find everything you need with exclusive deals and fast shipping.
+                            </p>
+                            <div class="hero-action">
+                                <a href="#products" class="btn-primary">Shop Now</a>
+                                <a href="#categories" class="btn-secondary">Browse Categories</a>
+                            </div>
+                            <ul class="feature-list pb-4">
+                                <li class="feature-item">
+                                    <i class="fa-solid fa-truck"></i>
+                                    <span>Free Shipping</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fa-solid fa-award"></i>
+                                    <span>Quality Guarantee</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fa-solid fa-headset"></i>
+                                    <span>24/7 Support</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image">
+                            <div class="product-show">
+                                <div class="product-card">
+                                    <img class="img-fluid" src="assets/img/product-2.webp" alt="">
+                                    <div class="product-badge">Best Seller</div>
+                                    <div class="product-info">
+                                        <h4>Premium Wireless Headphones</h4>
+                                        <div class="price">
+                                            <span class="sale-price">$299</span>
+                                            <span class="original-price">$399</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-product">
+                                    <div class="mini-product">
+                                        <img class="img-fluid" src="assets/img/product-3.webp" alt="">
+                                        <span class="mini-price">$89</span>
+                                    </div>
+                                    <div class="mini-product">
+                                        <img class="img-fluid" src="assets/img/product-5.webp" alt="">
+                                        <span class="mini-price">$149</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="floating-box d-none d-lg-block">
+                                <div class="floating-item cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="notification">3</span>
+                                </div>
+                                <div class="floating-item wishlist">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="floating-item search">
+                                    <i class="fa-solid fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        direction: "vertical",
+        loop: true,
+        speed: 500,
+        autoplay: {
+            delay: 3000
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+<script>
+    function updateDropdownBehavior() {
+        const dropdownToggles = document.querySelectorAll('.l');
+
+        if (window.innerWidth >= 1025) {
+            // On desktop: remove Bootstrap toggle behavior (no active state)
+            dropdownToggles.forEach(el => {
+                el.removeAttribute('data-bs-toggle');
+            });
+        } else {
+            // On mobile: restore Bootstrap toggle behavior
+            dropdownToggles.forEach(el => {
+                el.setAttribute('data-bs-toggle', 'dropdown');
+            });
+        }
+    }
+
+    // Run on load and resize
+    window.addEventListener('load', updateDropdownBehavior);
+    window.addEventListener('resize', updateDropdownBehavior);
+</script>
+
+</html>
