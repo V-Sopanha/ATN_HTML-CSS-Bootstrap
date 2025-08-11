@@ -149,9 +149,24 @@ header {
     font-size: 20px;
 }
 
-.main-bar .account-profile .action-btn i {
-    font-size: 28px;
+.main-bar  .action-btn i {
+    font-size: 26px;
 }
+.main-bar  .action-btn .notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    align-content: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
 
 .mobile-nav-toggle {
     font-size: 28px;
@@ -194,13 +209,8 @@ header {
 .navbar {
     padding: 0;
 }
-
-.navbar .navbar-nav {
-    border-bottom: 1px solid;
-}
-
 .navbar .navbar-nav .nav-item .nav-link {
-    padding: 12px 15px;
+    padding: 8px 15px;
     font-size: 14px;
 }
 
